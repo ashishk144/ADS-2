@@ -39,12 +39,12 @@ public class Solution {
                     g.addEdge(a, b);
                 }
             }
-            if (edges > 0) {
-                System.out.println(g.display(input));
-            } else {
-                System.out.println(vertices + " vertices, " + edges + " edges");
-                System.out.println("No edges");
-            }
+            // if (edges > 0) {
+            System.out.println(g.display(input));
+            // } else {
+            //     System.out.println(vertices + " vertices, " + edges + " edges");
+            //     System.out.println("No edges");
+            // }
         }
     }
 }

@@ -113,12 +113,16 @@ public class GraphList implements Graph {
     public String display(String[] data) {
         StringBuilder s = new StringBuilder();
         s.append(V + " vertices, " + E + " edges" + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(data[v] + ": ");
-            for (int w : adj[v]) {
-                s.append(data[w] + " ");
+        if (E > 0) {
+            for (int v = 0; v < V; v++) {
+                s.append(data[v] + ": ");
+                for (int w : adj[v]) {
+                    s.append(data[w] + " ");
+                }
+                s.append(NEWLINE);
             }
-            s.append(NEWLINE);
+        } else {
+            s.append("No edges");
         }
         return s.toString();
     }
