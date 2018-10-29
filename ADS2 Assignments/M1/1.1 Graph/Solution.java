@@ -39,12 +39,18 @@ public class Solution {
                     g.addEdge(a, b);
                 }
             }
-            // if (edges > 0) {
             System.out.println(g.display(input));
-            // } else {
-            //     System.out.println(vertices + " vertices, " + edges + " edges");
-            //     System.out.println("No edges");
-            // }
+        } else {
+            AdjMatrixGraph mat = new AdjMatrixGraph(vertices);
+            for (int i = 0; i < edges; i++) {
+                String[] add = scan.nextLine().split(" ");
+                int a = Integer.parseInt(add[0]);
+                int b = Integer.parseInt(add[1]);
+                if (a != b && !mat.hasEdge(a, b)) {
+                    mat.addEdge(a, b);
+                }
+            }
+            System.out.println(mat.display());
         }
     }
 }
