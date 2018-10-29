@@ -183,8 +183,8 @@ Expected Output:
 No edges
 
 Your Output: 
-1 vertices, 0 edges 
-Hyderabad:
+1 vertices, 1 edges 
+Hyderabad: Hyderabad Hyderabad
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########

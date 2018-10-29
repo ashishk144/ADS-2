@@ -34,9 +34,9 @@ public class Solution {
             String[] add = scan.nextLine().split(" ");
             int a = Integer.parseInt(add[0]);
             int b = Integer.parseInt(add[1]);
-            if (a !=b && !g.hasEdge(a, b)) {
-                g.addEdge(a, b);
-            }
+            // if (a !=b && !g.hasEdge(a, b)) {
+            g.addEdge(a, b);
+            // }
             System.out.println(g.display(input));
         }
     }
