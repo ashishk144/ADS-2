@@ -29,11 +29,15 @@ public class Solution {
         int vertices = Integer.parseInt(scan.nextLine());
         int edges = Integer.parseInt(scan.nextLine());
         String[] input = scan.nextLine().split(",");
-        for (int i = 0; i < input.length; i++) {
-
-        }
         if (type.equals("List")) {
             GraphList g = new GraphList(vertices);
+            String[] add = scan.nextLine().split(" ");
+            int a = Integer.parseInt(add[0]);
+            int b = Integer.parseInt(add[1]);
+            if (a !=b && !g.hasEdge(a, b)) {
+                g.addEdge(a, b);
+            }
+            System.out.println(g.display(input));
         }
     }
 }
