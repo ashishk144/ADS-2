@@ -112,7 +112,7 @@ public class GraphList implements Graph {
      */
     public String display(String[] data) {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
+        s.append(V + " vertices, " + E + " edges" + NEWLINE);
         for (int v = 0; v < V; v++) {
             s.append(data[v] + ": ");
             for (int w : adj[v]) {
