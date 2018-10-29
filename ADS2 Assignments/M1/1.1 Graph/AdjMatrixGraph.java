@@ -85,11 +85,11 @@ public class AdjMatrixGraph {
                     } else {
                         s += "0" + " ";
                     }
-                } s = s.substring(0, s.length() - 1) + NEWLINE;
+                } s += NEWLINE;
             }
         } else {
             s += "No edges";
         }
-        return s.substring(0, s.length() - 1);
+        return s.substring(0, s.length());
     }
 }
