@@ -81,5 +81,7 @@ Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M1\1.1 Graph\Solution.java:8:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M1\1.1 Graph\Solution.java:8:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M1\1.1 Graph\Solution.java:14: Class Solution should be declared as final. [FinalClass]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M1\1.1 Graph\Solution.java:34:16: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M1\1.1 Graph\Solution.java:38:25: '!=' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 17 errors.

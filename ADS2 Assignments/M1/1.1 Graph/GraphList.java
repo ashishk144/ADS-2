@@ -53,8 +53,8 @@ public class GraphList implements Graph {
      * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
      */
     public void addEdge(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
+        // validateVertex(v);
+        // validateVertex(w);
         E++;
         adj[v].add(w);
         adj[w].add(v);
