@@ -76,14 +76,19 @@ public class AdjMatrixGraph {
     // string representation of Graph - takes quadratic time
     public String display() {
         String s = "";
-        for(int i = 0; i < V(); i++) {
-            for(int j = 0; j < V(); j++) {
-                if (adj[i][j]) {
-                    s += "1" + " ";
-                } else {
-                    s += "0" + " ";
-                }
-            } s = s.substring(0, s.length() - 1) + NEWLINE;
+        s += V + " vertices, " + E + " edges" + NEWLINE;
+        if(E() > 0) {
+            for(int i = 0; i < V(); i++) {
+                for(int j = 0; j < V(); j++) {
+                    if (adj[i][j]) {
+                        s += "1" + " ";
+                    } else {
+                        s += "0" + " ";
+                    }
+                } s = s.substring(0, s.length() - 1) + NEWLINE;
+            }
+        } else {
+            s += "No edges";
         }
         return s.substring(0, s.length() - 1);
     }

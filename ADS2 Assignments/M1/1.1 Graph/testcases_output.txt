@@ -50,6 +50,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
+13 vertices, 13 edges
 0 1 1 0 0 1 1 0 0 0 0 0 0
 1 0 0 0 0 0 0 0 0 0 0 0 0
 1 0 0 0 0 0 0 0 0 0 0 0 0
@@ -186,6 +187,7 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
+36 vertices, 72 edges
 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 0
 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0
 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0
@@ -240,7 +242,8 @@ Expected Output:
 No edges
 
 Your Output: 
-0
+1 vertices, 0 edges
+No edge
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -249,11 +252,8 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
-	at java.base/java.lang.String.checkBoundsBeginEnd(Unknown Source)
-	at java.base/java.lang.String.substring(Unknown Source)
-	at AdjMatrixGraph.display(AdjMatrixGraph.java:88)
-	at Solution.main(Solution.java:53)
+0 vertices, 0 edges
+No edge
 ----------------------------------------
 
 ########## Testcase 7: Passed ##########
