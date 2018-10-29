@@ -205,13 +205,13 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
-0 vertices, 0edges
+0 vertices, 0 edges
 No edges
 ----------------------------------------
 
