@@ -31,15 +31,19 @@ public class Solution {
         String[] input = scan.nextLine().split(",");
         if (type.equals("List")) {
             GraphList g = new GraphList(vertices);
-            for(int i = 0; i < edges; i++) {
+            for (int i = 0; i < edges; i++) {
                 String[] add = scan.nextLine().split(" ");
                 int a = Integer.parseInt(add[0]);
                 int b = Integer.parseInt(add[1]);
-                // if (a !=b && !g.hasEdge(a, b)) {
-                g.addEdge(a, b);
-                // }
+                if (a != b && !g.hasEdge(a, b)) {
+                    g.addEdge(a, b);
+                }
             }
-            System.out.println(g.display(input));
+            if (edges > 0) {
+                System.out.println(g.display(input));
+            } else {
+                System.out.println("No edges");
+            }
         }
     }
 }
