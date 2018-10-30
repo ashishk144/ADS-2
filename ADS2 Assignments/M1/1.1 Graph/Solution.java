@@ -69,9 +69,7 @@ public final class Solution {
                 String[] add = scan.nextLine().split(" ");
                 int a = Integer.parseInt(add[0]);
                 int b = Integer.parseInt(add[1]);
-                if (a != b && !g.hasEdge(a, b)) {
-                    g.addEdge(a, b);
-                }
+                g.addEdge(a, b);
             }
             System.out.println(g.display(input));
         } else {
@@ -80,9 +78,7 @@ public final class Solution {
                 String[] add = scan.nextLine().split(" ");
                 int a = Integer.parseInt(add[0]);
                 int b = Integer.parseInt(add[1]);
-                if (a != b && !mat.hasEdge(a, b)) {
-                    mat.addEdge(a, b);
-                }
+                mat.addEdge(a, b);
             }
             System.out.println(mat);
         }

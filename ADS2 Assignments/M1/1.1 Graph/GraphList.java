@@ -52,9 +52,9 @@ class GraphList implements Graph {
     public void addEdge(final int v, final int w) {
         if (!hasEdge(v, w) && v != w) {
             edge++;
+            adj[v].add(w);
+            adj[w].add(v);
         }
-        adj[v].add(w);
-        adj[w].add(v);
     }
     /**
      * iterable.
