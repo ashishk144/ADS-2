@@ -13,11 +13,11 @@ public class Bipartite {
      */
     public Bipartite(Graph G) {
         isBipartite = true;
-        color  = new boolean[G.V()];
-        marked = new boolean[G.V()];
-        edgeTo = new int[G.V()];
+        color  = new boolean[G.vertices()];
+        marked = new boolean[G.vertices()];
+        edgeTo = new int[G.vertices()];
 
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < G.vertices(); v++) {
             if (!marked[v]) {
                 dfs(G, v);
             }
@@ -94,7 +94,7 @@ public class Bipartite {
     private boolean check(Graph G) {
         // graph is bipartite
         if (isBipartite) {
-            for (int v = 0; v < G.V(); v++) {
+            for (int v = 0; v < G.vertices(); v++) {
                 for (int w : G.adj(v)) {
                     if (color[v] == color[w]) {
                         System.err.printf("edge %d-%d with %d and %d in same side of bipartition\n", v, w, v, w);
