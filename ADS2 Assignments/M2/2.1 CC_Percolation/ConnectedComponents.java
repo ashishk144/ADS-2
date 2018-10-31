@@ -38,7 +38,7 @@ public class ConnectedComponents {
 
     /**
      * depth-first search for a Graph.
-     * Complexity V.
+     * Complexity E.
      * @param      graph  The graph
      * @param      v      { parameter_description }
      */

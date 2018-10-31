@@ -20,7 +20,7 @@ class Percolation {
     private boolean[] connected;
     /**
      * Constructs the object.
-     *
+     * Complexity N
      * @param      n1    The n1
      */
     Percolation(final int n1) {
@@ -60,7 +60,7 @@ class Percolation {
     }
     /**
      * {Method to open site (row, col) if it is not open already}.
-     *
+     * Complexity 1
      * @param      row   The row
      * @param      col   The col
      */
