@@ -2,30 +2,31 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class WordNet {
-    HashMap<Integer, Bag<String>> ib;
-    HashMap<String, Integer> si;
+    HashMap<Integer, Bag<String>> synset;
+    HashMap<String, Bag<Integer>> synset1;
     Digraph g;
     // constructor takes the name of the two input files
     public WordNet(String synsets, String hypernyms) {
         In syn = new In(synsets);
         In hyp = new In(hypernyms);
-        String[] syns = syn.readAllLines();
-        String[] hyper = hyp.readAllLines();
-        this.ib = new HashMap<Integer, Bag<String>>();
-        this.si = new HashMap<String, Integer>();
-        for (String s: syns) {
+        // String[] syns = syn.readAllLines();
+        // String[] hyper = hyp.readAllLines();
+        this.synset = new HashMap<Integer, Bag<String>>();
+        this.synset1 = new HashMap<String, Bag<Integer>>();
+        for (String s : syn.readAllLines()) {
             String[] temp = s.split(",");
-            Bag<String> b = new Bag();
-            for(String k: temp[1].split(" ")) {
-                b.add(k);
-                si.put(k, Integer.parseInt(temp[0]));
+            int id = Integer.parseInt(temp[0]);
+            synset.putIfAbsent(id, new Bag<String>());
+            for (String k : temp[1].split(" ")) {
+                synset.get(id).add(k);
+                synset1.putIfAbsent(k, new Bag<Integer>());
+                synset1.get(k).add(id);
             }
-            ib.put(Integer.parseInt(temp[0]), b);
         }
-        g = new Digraph(syns.length);
-        for (String m: hyper) {
+        g = new Digraph(synset.size());
+        for (String m : hyp.readAllLines()) {
             String[] t = m.split(",");
-            for(int i = 1; i < t.length; i++) {
+            for (int i = 1; i < t.length; i++) {
                 g.addEdge(Integer.parseInt(t[0]), Integer.parseInt(t[i]));
             }
         }
@@ -33,17 +34,17 @@ public class WordNet {
 
     // returns all WordNet nouns
     public Iterable<String> nouns() {
-        return this.si.keySet();
+        return this.synset1.keySet();
     }
 
     // is the word a WordNet noun?
     public boolean isNoun(String word) {
-        return this.si.keySet().contains(word);
+        return this.synset1.keySet().contains(word);
     }
 
     // distance between nounA and nounB (defined below)
     // public int distance(String nounA, String nounB) {
-
+    //     if()
     // }
     public Digraph getGraph() {
         return this.g;
