@@ -218,7 +218,7 @@ public class Digraph {
         StringBuilder s = new StringBuilder();
         s.append(vertices + " vertices, " + edges + " edges \n");
         for (int v = 0; v < vertices; v++) {
-            s.append(String.format("%d: ", vertices));
+            s.append(String.format("%d: ", v));
             for (int w : adj[v]) {
                 s.append(String.format("%d ", w));
             }
