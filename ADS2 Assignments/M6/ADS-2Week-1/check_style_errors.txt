@@ -158,23 +158,14 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:7:30: Variable 'prstore' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:8:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:8:14: Parameter g should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:15:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:15:12: Name 'GetPR' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:15:18: Parameter v should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:25:29: '104' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:39:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:53: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:53:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:54:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:54:29: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:7: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:11: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:15: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:38:12: Name 'GetPR' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:48:29: '104' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:83:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:84: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.

@@ -1,18 +1,41 @@
 import java.util.Scanner;
 import java.util.TreeMap;
-
+/**
+ * Class for page rank.
+ */
 class PageRank {
+    /**
+     * { var_description }
+     */
     private Digraph dig;
+    /**
+     * { var_description }
+     */
     private double[] pageranks;
-    TreeMap<Integer, Double> prstore;
-    PageRank(Digraph g) {
+    /**
+     * { var_description }
+     */
+    private TreeMap<Integer, Double> prstore;
+    /**
+     * Constructs the object.
+     *
+     * @param      g     { parameter_description }
+     */
+    PageRank(final Digraph g) {
         this.dig = g;
         this.pageranks = new double[g.vertices()];
         for (int i = 0; i < g.vertices(); i++) {
             pageranks[i] = GetPR(i);
         }
     }
-    double GetPR(int v) {
+    /**
+     * Gets the pr.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     The pr.
+     */
+    double GetPR(final int v) {
         prstore = new TreeMap<Integer, Double>();
         double pr = 1.0 / this.dig.vertices();
         TreeMap<Integer, Double> tr = new TreeMap<Integer, Double>();
@@ -36,6 +59,11 @@ class PageRank {
         }
         return prstore.get(v);
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String s = "";
         for (int i = 0; i < pageranks.length; i++) {
@@ -49,9 +77,16 @@ class PageRank {
 
 // }
 
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-    public static void main(String[] args) {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         // read the first line of the input to get the number of vertices
         Scanner scan = new Scanner(System.in);
         int vertices = Integer.parseInt(scan.nextLine());
