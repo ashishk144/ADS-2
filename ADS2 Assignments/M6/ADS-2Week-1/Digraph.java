@@ -23,7 +23,7 @@ public class Digraph {
      * adj[v] = adjacency list for vertex v.
      */
     private int[] indegree;
-    
+
 
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
@@ -212,7 +212,7 @@ public class Digraph {
     /**
      * Returns a string representation of the graph.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,  
+     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
      */
     public String toString() {
