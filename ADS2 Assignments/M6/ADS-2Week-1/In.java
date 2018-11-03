@@ -184,52 +184,6 @@ public final class In {
         }
         return lines.toArray(new String[lines.size()]);
     }
-
-
-    /**
-     * Reads all remaining tokens from this input stream, parses them as integers,
-     * and returns them as an array of integers.
-     *
-     * @return all remaining lines in this input stream, as an array of integers
-     */
-    public int[] readAllInts() {
-        String[] fields = readAllStrings();
-        int[] vals = new int[fields.length];
-        for (int i = 0; i < fields.length; i++)
-            vals[i] = Integer.parseInt(fields[i]);
-        return vals;
-    }
-
-    /**
-     * Reads all remaining tokens from this input stream, parses them as longs,
-     * and returns them as an array of longs.
-     *
-     * @return all remaining lines in this input stream, as an array of longs
-     */
-    public long[] readAllLongs() {
-        String[] fields = readAllStrings();
-        long[] vals = new long[fields.length];
-        for (int i = 0; i < fields.length; i++)
-            vals[i] = Long.parseLong(fields[i]);
-        return vals;
-    }
-
-    /**
-     * Reads all remaining tokens from this input stream, parses them as doubles,
-     * and returns them as an array of doubles.
-     *
-     * @return all remaining lines in this input stream, as an array of doubles
-     */
-    public double[] readAllDoubles() {
-        String[] fields = readAllStrings();
-        double[] vals = new double[fields.length];
-        for (int i = 0; i < fields.length; i++)
-            vals[i] = Double.parseDouble(fields[i]);
-        return vals;
-    }
-    
-    ///// end: section (2 of 2) of code duplicated from In to StdIn */
-
    /**
      * Closes this input stream.
      */

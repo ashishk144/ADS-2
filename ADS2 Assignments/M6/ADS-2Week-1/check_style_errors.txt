@@ -1,9 +1,7 @@
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Bag.java:83:20: '!=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Bag.java:83:22: '!=' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Digraph.java:26: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Digraph.java:215: Line has trailing spaces. [RegexpSingleline]
@@ -52,15 +50,9 @@ Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:169:43: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:170:39: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:170:40: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:190: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:198: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:212: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:218: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:226: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:230: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:237: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:191: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 48 errors.
+Checkstyle ends with 42 errors.
 Starting audit...
 Audit done.
 Starting audit...
