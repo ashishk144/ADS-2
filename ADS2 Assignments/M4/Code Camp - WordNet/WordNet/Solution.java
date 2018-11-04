@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /**
  * Class for solution.
  */
@@ -19,13 +20,14 @@ public final class Solution {
         String hypernym = "Files/" + in.readString();
         WordNet word = new WordNet(synset, hypernym);
         String token = in.readString();
+        Scanner scan = new Scanner(System.in);
         switch (token) {
             case "Graph":
                 System.out.println(word.getGraph());
                 break;
             case "Queries":
-                while(in.hasNextLine()) {
-                    String[] line = in.readLine().split(" ");
+                while(scan.hasNext()) {
+                    String[] line = scan.nextLine().split(" ");
                     System.out.println("distance = " + word.distance(line[0], line[1]) + "ancestor =" + word.sap(line[0], line[1]));
                 }
                 break;
