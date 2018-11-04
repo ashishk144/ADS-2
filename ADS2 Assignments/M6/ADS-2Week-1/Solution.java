@@ -27,7 +27,9 @@ class PageRank {
         for (int i = 0; i < g.vertices(); i++) {
             if (g.outdegree(i) == 0) {
                 for (int j = 0; j < g.vertices(); j++) {
-                    g.addEdge(i, j);
+                    if(i != j) {
+                        g.addEdge(i, j);
+                    }
                 }
             }
             pageranks[i] = getPR(i);
