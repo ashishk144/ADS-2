@@ -75,13 +75,7 @@ Checkstyle ends with 29 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\SAP.java:25:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\SAP.java:33: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\SAP.java:147:25: Parameter v should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\SAP.java:147:46: Parameter w should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
 Starting audit...

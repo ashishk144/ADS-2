@@ -20,10 +20,10 @@ public class SAP {
     /**
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      dig     { parameter_description }
      */
-    public SAP(final Digraph G) {
-        this.graph = G;
+    public SAP(final Digraph dig) {
+        this.graph = dig;
         dist = Integer.MAX_VALUE;
     }
 
@@ -31,7 +31,7 @@ public class SAP {
     // and w; -1 if no such path
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
@@ -117,7 +117,7 @@ public class SAP {
      * @return     { description_of_the_return_value }
      */
     public int length(final Iterable<Integer> v,
-        final Iterable<Integer> w) {
+                      final Iterable<Integer> w) {
         for (int i : v) {
             for (int j : w) {
                 int tdist = length(i, j);
@@ -144,7 +144,7 @@ public class SAP {
      *
      * @return     { description_of_the_return_value }
      */
-    public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
+    public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
         for (int i : v) {
             for (int j : w) {
                 int tdist = length(i, j);
