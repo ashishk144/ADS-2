@@ -68,7 +68,7 @@ public class SAP {
 		for (int i : v) {
 			for (int j : w) {
 				int tdist = length(i, j);
-				if (tdist != -1 && dist > tdist) {
+				if (tdist != -1 && dist >= tdist) {
 					dist = tdist;
 					ancestor = ancestor(i, j);
 				}
@@ -82,7 +82,7 @@ public class SAP {
 		for (int i : v) {
 			for (int j : w) {
 				int tdist = length(i, j);
-				if (tdist != -1 && dist > tdist) {
+				if (tdist != -1 && dist >= tdist) {
 					dist = tdist;
 					ancestor = ancestor(i, j);
 				}
