@@ -40,7 +40,7 @@ class PageRank {
         double pr = 1.0 / this.dig.vertices();
         TreeMap<Integer, Double> tr = new TreeMap<Integer, Double>();
         for (int i = 0; i < this.dig.vertices(); i++) {
-            if(dig.outdegree(i) == 0) {
+            if (dig.outdegree(i) == 0) {
                 for (int j = 0; j < this.dig.vertices(); j++) {
                     this.dig.addEdge(i, j);
                 }
@@ -50,7 +50,7 @@ class PageRank {
         }
         Digraph f = this.dig.reverse();
         double fpr = 0.0;
-        for (int j = 0; j < 1000; j++) {
+        for (int j = 0; j < 104; j++) {
             for (int i = 0; i < this.dig.vertices(); i++) {
                 fpr = 0.0;
                 for (int k : f.adj(i)) {
