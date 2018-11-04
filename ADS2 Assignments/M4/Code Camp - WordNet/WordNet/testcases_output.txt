@@ -42,8 +42,8 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-distance = 0 ancestor = enzyme
-distance = 0 ancestor = change
+distance = 7 ancestor = entity
+distance = 10 ancestor = entity
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -56,12 +56,12 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-distance = 0 ancestor = DNA_polymerase
-distance = 0 ancestor = DNA_polymerase
-distance = 0 ancestor = DNA_polymerase
-distance = 0 ancestor = DNA_polymerase
-distance = 0 ancestor = wool_oil
-distance = 0 ancestor = wool_oil
+distance = 7 ancestor = macromolecule supermolecule
+distance = 7 ancestor = macromolecule supermolecule
+distance = 9 ancestor = macromolecule supermolecule
+distance = 8 ancestor = macromolecule supermolecule
+distance = 7 ancestor = lipid lipide lipoid
+distance = 1 ancestor = animal_oil
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -71,9 +71,9 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-distance = 0 ancestor = Ghedda_wax
-distance = 0 ancestor = pleura
-distance = 0 ancestor = gondang_wax fig_wax
+distance = 3 ancestor = wax
+distance = 13 ancestor = thing
+distance = 2 ancestor = wax
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -106,16 +106,16 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
+distance = 1 ancestor = b
+distance = 2 ancestor = c
+distance = 4 ancestor = c
+distance = 3 ancestor = c
+distance = 4 ancestor = c
+distance = 4 ancestor = c
+distance = 3 ancestor = c
+distance = 3 ancestor = i
+distance = 2 ancestor = j
+distance = 1 ancestor = k
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -129,13 +129,13 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
+distance = 1 ancestor = b
+distance = 2 ancestor = c
+distance = 2 ancestor = h
+distance = 5 ancestor = h
+distance = 4 ancestor = h
+distance = 3 ancestor = h
+distance = 1 ancestor = h
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -152,16 +152,16 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
-distance = 0 ancestor = a
+distance = 1 ancestor = b
+distance = 1 ancestor = c
+distance = 1 ancestor = d
+distance = 1 ancestor = e
+distance = 2 ancestor = f
+distance = 3 ancestor = f
+distance = 3 ancestor = f
+distance = 3 ancestor = f
+distance = 3 ancestor = f
+distance = 4 ancestor = f
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -222,7 +222,7 @@ IllegalArgumentException
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at SAP.length(SAP.java:68)
+	at SAP.length(SAP.java:72)
 	at WordNet.distance(WordNet.java:52)
 	at Solution.main(Solution.java:30)
 ----------------------------------------
@@ -233,7 +233,7 @@ IllegalArgumentException
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at SAP.length(SAP.java:68)
+	at SAP.length(SAP.java:72)
 	at WordNet.distance(WordNet.java:52)
 	at Solution.main(Solution.java:30)
 ----------------------------------------
@@ -259,23 +259,23 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-distance = 0 ancestor = zoospore
-distance = 0 ancestor = young_bird
-distance = 0 ancestor = xerostomia dry_mouth
-distance = 0 ancestor = workspace
-distance = 0 ancestor = 1530s
-distance = 0 ancestor = 22-karat_gold
-distance = 0 ancestor = Aberdeen
-distance = 0 ancestor = P p
-distance = 0 ancestor = X x ex
-distance = 0 ancestor = Cleopatra
+distance = 11 ancestor = whole unit
+distance = 8 ancestor = organism being
+distance = 14 ancestor = entity
+distance = 13 ancestor = object physical_object
+distance = 2 ancestor = decade decennary decennium
+distance = 8 ancestor = substance
+distance = 2 ancestor = port
+distance = 2 ancestor = letter letter_of_the_alphabet alphabetic_character
+distance = 2 ancestor = letter letter_of_the_alphabet alphabetic_character
+distance = 12 ancestor = person individual someone somebody mortal soul
+distance = 15 ancestor = abstraction abstract_entity
 distance = 0 ancestor = 9/11 9-11 September_11 Sept._11 Sep_11
-distance = 0 ancestor = 9/11 9-11 September_11 Sept._11 Sep_11
-distance = 0 ancestor = one 1 I ace single unity
-distance = 0 ancestor = one 1 I ace single unity
-distance = 0 ancestor = Z z zee zed ezed izzard
+distance = 2 ancestor = digit figure
+distance = 13 ancestor = abstraction abstract_entity
+distance = 12 ancestor = abstraction abstract_entity
 distance = 0 ancestor = era epoch
-distance = 0 ancestor = character graph grapheme graphic_symbol
+distance = 8 ancestor = abstraction abstract_entity
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########

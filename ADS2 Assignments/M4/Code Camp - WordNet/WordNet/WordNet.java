@@ -49,7 +49,7 @@ public class WordNet {
         //     return 0;
         // } else {
             sap = new SAP(this.g);
-            int dist = sap.length(synset1.get(nounA), synset1.get(nounA));
+            int dist = sap.length(synset1.get(nounA), synset1.get(nounB));
         // }
         return dist;
     }
@@ -60,7 +60,7 @@ public class WordNet {
     // // in a shortest ancestral path (defined below)
     public String sap(String nounA, String nounB) {
         sap = new SAP(this.g);
-        int id = sap.ancestor(synset1.get(nounA), synset1.get(nounA));
+        int id = sap.ancestor(synset1.get(nounA), synset1.get(nounB));
         String ances = "";
         for (String s: synset.get(id)) {
             ances = s + " " + ances;

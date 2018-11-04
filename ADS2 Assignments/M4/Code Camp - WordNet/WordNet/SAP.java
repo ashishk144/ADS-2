@@ -4,22 +4,21 @@ import java.util.*;
  */
 public class SAP {
     Digraph graph;
-    int dist;
-    int ancestor;
+    Integer dist;
+    Integer ancestor;
     // constructor takes a digraph (not necessarily a DAG)
     public SAP(Digraph G) {
         this.graph = G;
         dist = Integer.MAX_VALUE;
-        ancestor = Integer.MAX_VALUE;
     }
 
     // length of shortest ancestral path between v and w; -1 if no such path
     public int length(int v, int w) {
-        BreadthFirstDirectedPaths bfs1 = new BreadthFirstDirectedPaths(graph, v);
-        BreadthFirstDirectedPaths bfs2 = new BreadthFirstDirectedPaths(graph, w);
+        BreadthFirstDirectedPaths bfs1 = new BreadthFirstDirectedPaths(this.graph, v);
+        BreadthFirstDirectedPaths bfs2 = new BreadthFirstDirectedPaths(this.graph, w);
         Set<Integer> s1 = new HashSet<Integer>();
         Set<Integer> s2 = new HashSet<Integer>();
-        for (int i = 0; i < graph.vertices(); i++) {
+        for (int i = 0; i < this.graph.vertices(); i++) {
             if (bfs1.hasPathTo(i)) {
                 s1.add(i);
             }
@@ -42,11 +41,11 @@ public class SAP {
 
     // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
     public int ancestor(int v, int w) {
-        BreadthFirstDirectedPaths bfs1 = new BreadthFirstDirectedPaths(graph, v);
-        BreadthFirstDirectedPaths bfs2 = new BreadthFirstDirectedPaths(graph, w);
+        BreadthFirstDirectedPaths bfs1 = new BreadthFirstDirectedPaths(this.graph, v);
+        BreadthFirstDirectedPaths bfs2 = new BreadthFirstDirectedPaths(this.graph, w);
         Set<Integer> s1 = new HashSet<Integer>();
         Set<Integer> s2 = new HashSet<Integer>();
-        for (int i = 0; i < graph.vertices(); i++) {
+        for (int i = 0; i < this.graph.vertices(); i++) {
             if (bfs1.hasPathTo(i)) {
                 s1.add(i);
             }
