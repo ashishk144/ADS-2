@@ -7,7 +7,7 @@ public class WordNet {
     Digraph g;
     SAP sap;
     // constructor takes the name of the two input files
-    public WordNet(String synsets, String hypernyms) {
+    public WordNet(String synsets, String hypernyms) throws Exception {
         In syn = new In(synsets);
         In hyp = new In(hypernyms);
         // String[] syns = syn.readAllLines();
@@ -30,6 +30,19 @@ public class WordNet {
             for (int i = 1; i < t.length; i++) {
                 g.addEdge(Integer.parseInt(t[0]), Integer.parseInt(t[i]));
             }
+        }
+        int cnt = 0;
+        for (int i = 0; i < g.vertices(); i++) {
+            if (g.outdegree(i) == 0) {
+                cnt++;
+            }
+        }
+        if (cnt !=1 ) {
+            throw new Exception("Multiple roots");
+        }
+        DirectedCycle dc = new DirectedCycle(g);
+        if (dc.hasCycle()) {
+            throw new Exception("Cycle detected");
         }
     }
 
