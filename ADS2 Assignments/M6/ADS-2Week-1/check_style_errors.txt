@@ -1,16 +1,11 @@
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Digraph.java:215: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:8:8: Unused import - java.net.Socket. [UnusedImports]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:12:8: Unused import - java.util.InputMismatchException. [UnusedImports]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:14:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:17: First sentence should end with a period. [JavadocStyle]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:21: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:23: Line has trailing spaces. [RegexpSingleline]
@@ -31,38 +26,21 @@ Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:91: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:95: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:97:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:111: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:117: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:120: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:127: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:133: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:142: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:144: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:145: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:146: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:166: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:168:57: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:168:58: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:169: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:169:42: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:169:43: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:170:39: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:170:40: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:191: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:120:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:131: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:134: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:141: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:147: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\In.java:171: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 42 errors.
+Checkstyle ends with 29 errors.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:7: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:11: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:15: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:38:12: Name 'GetPR' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:48:29: '104' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:83:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:84: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:48:29: '1000' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:83: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.

@@ -108,7 +108,21 @@ public final class In {
     public boolean exists()  {
         return scanner != null;
     }
-    
+    /**
+     * Reads and returns the next line in this input stream.
+     *
+     * @return the next line in this input stream; {@code null} if no such line
+     */
+    public String readLine() {
+        String line;
+        try {
+            line = scanner.nextLine();
+        }
+        catch (NoSuchElementException e) {
+            line = null;
+        }
+        return line;
+    }
     ////  begin: section (2 of 2) of code duplicated from In to StdIn,
     ////  with all methods changed from "public" to "public static".
 
@@ -135,40 +149,6 @@ public final class In {
      */
     public boolean hasNextLine() {
         return scanner.hasNextLine();
-    }
-
-    /**
-     * Returns true if this input stream has more input (including whitespace).
-     * Use this method to know whether the next call to {@link #readChar()} will succeed.
-     * This method is functionally equivalent to {@link #hasNextLine()}.
-     * 
-     * @return {@code true} if this input stream has more input (including whitespace);
-     *         {@code false} otherwise   
-     */
-    public boolean hasNextChar() {
-        scanner.useDelimiter(EMPTY_PATTERN);
-        boolean result = scanner.hasNext();
-        scanner.useDelimiter(WHITESPACE_PATTERN);
-        return result;
-    }
-
-
-    /**
-     * Reads all remaining tokens from this input stream and returns them as
-     * an array of strings.
-     *
-     * @return all remaining tokens in this input stream, as an array of strings
-     */
-    public String[] readAllStrings() {
-        // we could use readAll.trim().split(), but that's not consistent
-        // since trim() uses characters 0x00..0x20 as whitespace
-        String[] tokens = WHITESPACE_PATTERN.split(readAll());
-        if (tokens.length == 0 || tokens[0].length() > 0)
-            return tokens;
-        String[] decapitokens = new String[tokens.length-1];
-        for (int i = 0; i < tokens.length-1; i++)
-            decapitokens[i] = tokens[i+1];
-        return decapitokens;
     }
 
     /**

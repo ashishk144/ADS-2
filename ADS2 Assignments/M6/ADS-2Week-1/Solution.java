@@ -5,15 +5,15 @@ import java.util.TreeMap;
  */
 class PageRank {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Digraph dig;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private double[] pageranks;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private TreeMap<Integer, Double> prstore;
     /**
@@ -25,7 +25,7 @@ class PageRank {
         this.dig = g;
         this.pageranks = new double[g.vertices()];
         for (int i = 0; i < g.vertices(); i++) {
-            pageranks[i] = GetPR(i);
+            pageranks[i] = getPR(i);
         }
     }
     /**
@@ -35,7 +35,7 @@ class PageRank {
      *
      * @return     The pr.
      */
-    double GetPR(final int v) {
+    double getPR(final int v) {
         prstore = new TreeMap<Integer, Double>();
         double pr = 1.0 / this.dig.vertices();
         TreeMap<Integer, Double> tr = new TreeMap<Integer, Double>();
@@ -45,10 +45,10 @@ class PageRank {
         }
         Digraph f = this.dig.reverse();
         double fpr = 0.0;
-        for (int j = 0; j < 104; j++) {
+        for (int j = 0; j < 1000; j++) {
             for (int i = 0; i < this.dig.vertices(); i++) {
                 fpr = 0.0;
-                for (int k : f.adj(v)) {
+                for (int k : f.adj(i)) {
                     fpr += tr.get(k) / this.dig.outdegree(k);
                 }
                 prstore.put(i, fpr);
@@ -82,7 +82,13 @@ class PageRank {
  */
 public class Solution {
     /**
-     * { function_description }
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
+     * { function_description }.
      *
      * @param      args  The arguments
      */
