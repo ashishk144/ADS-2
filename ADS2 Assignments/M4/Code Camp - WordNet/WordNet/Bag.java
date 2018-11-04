@@ -80,7 +80,7 @@ public class Bag<Item> implements Iterable<Item> {
     public String toString() {
         Node temp = first;
         String s = "";
-        while (temp!=null) {
+        while (temp != null) {
             s += temp.item + " ";
             temp = temp.next;
         }

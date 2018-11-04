@@ -1,9 +1,5 @@
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Bag.java:83:20: '!=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Bag.java:83:22: '!=' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:5:5: Missing a Javadoc comment. [JavadocVariable]
@@ -121,9 +117,8 @@ Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:24: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:29:26: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:31: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
