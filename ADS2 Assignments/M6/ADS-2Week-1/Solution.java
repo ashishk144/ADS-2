@@ -45,11 +45,11 @@ class PageRank {
         }
         Digraph f = this.dig.reverse();
         double fpr = 0.0;
-        for (int j = 0; j < 104; j++) {
+        for (int j = 0; j < 1000; j++) {
             for (int i = 0; i < this.dig.vertices(); i++) {
                 fpr = 0.0;
                 for (int k : f.adj(i)) {
-                    fpr += tr.get(k) / this.dig.outdegree(k);
+                    fpr += (double) tr.get(k) / this.dig.outdegree(k) * 1.0;
                 }
                 prstore.put(i, fpr);
             }
