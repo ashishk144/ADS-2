@@ -37,14 +37,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Digraph.java:214: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Digraph.java:214: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\In.java:7:8: Unused import - java.net.Socket. [UnusedImports]
@@ -121,23 +116,11 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:7: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:11: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:15: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:19: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:29:8: Unable to get class information for @throws tag '<exception_object>'. [JavadocMethod]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:32:12: Expected @throws tag for 'Exception'. [JavadocMethod]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:62:21: ')' is preceded with whitespace. [ParenPad]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:72:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'nouns' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'nouns' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:72:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:77:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'isNoun' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'isNoun' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:77:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:82:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:82:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:91:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'getGraph' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'getGraph' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:91:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:94: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:96:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:96:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:73: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:97: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:122: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 7 errors.

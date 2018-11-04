@@ -1,23 +1,22 @@
-import java.util.Arrays;
 import java.util.HashMap;
 /**
  * Class for word net.
  */
 public class WordNet {
     /**
-     * { item_description }
+     * { item_description }.
      */
     private HashMap<Integer, Bag<String>> synset;
     /**
-     * { item_description }
+     * { item_description }.
      */
     private HashMap<String, Bag<Integer>> synset1;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Digraph g;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private SAP sap;
     // constructor takes the name of the two input files
@@ -27,6 +26,7 @@ public class WordNet {
      *
      * @param      synsets    The synsets
      * @param      hypernyms  The hypernyms
+     * @throws     <exception_object> { exception_description }
      */
     public WordNet(final String synsets, final String hypernyms)
     throws Exception {
@@ -69,16 +69,39 @@ public class WordNet {
     }
 
     // returns all WordNet nouns
+
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<String> nouns() {
         return this.synset1.keySet();
     }
 
     // is the word a WordNet noun?
+
+    /**
+     * Determines if noun.
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
     public boolean isNoun(final String word) {
         return this.synset1.keySet().contains(word);
     }
 
     // distance between nounA and nounB (defined below)
+
+    /**
+     * { function_description }
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int distance(final String nounA, final String nounB) {
         // if(nounA.equals(null) || nounA.equals(null)) {
         //     return 0;
@@ -88,11 +111,22 @@ public class WordNet {
         // }
         return dist;
     }
+    /**
+     * Gets the graph.
+     *
+     * @return     The graph.
+     */
     public Digraph getGraph() {
         return this.g;
     }
-    // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-    // // in a shortest ancestral path (defined below)
+    /**
+     * { function_description }
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String sap(final String nounA, final String nounB) {
         sap = new SAP(this.g);
         int id = sap.ancestor(synset1.get(nounA), synset1.get(nounB));
