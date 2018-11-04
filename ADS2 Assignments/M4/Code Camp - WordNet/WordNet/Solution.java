@@ -24,6 +24,10 @@ public final class Solution {
                 System.out.println(word.getGraph());
                 break;
             case "Queries":
+                while(in.hasNextLine()) {
+                    String[] line = in.readLine().split(" ");
+                    System.out.println("distance = " + word.distance(line[0], line[1]) + "ancestor =" + word.sap(line[0], line[1]));
+                }
                 break;
         }
     }

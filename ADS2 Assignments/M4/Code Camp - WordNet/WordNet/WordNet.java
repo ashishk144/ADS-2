@@ -5,6 +5,7 @@ public class WordNet {
     HashMap<Integer, Bag<String>> synset;
     HashMap<String, Bag<Integer>> synset1;
     Digraph g;
+    SAP sap;
     // constructor takes the name of the two input files
     public WordNet(String synsets, String hypernyms) {
         In syn = new In(synsets);
@@ -43,15 +44,29 @@ public class WordNet {
     }
 
     // distance between nounA and nounB (defined below)
-    // public int distance(String nounA, String nounB) {
-    //     if()
-    // }
+    public int distance(String nounA, String nounB) {
+        // if(nounA.equals(null) || nounA.equals(null)) {
+        //     return 0;
+        // } else {
+            sap = new SAP(this.g);
+            int dist = sap.length(synset1.get(nounA), synset1.get(nounA));
+        // }
+        return dist;
+    }
     public Digraph getGraph() {
         return this.g;
     }
     // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
     // // in a shortest ancestral path (defined below)
-    // public String sap(String nounA, String nounB)
+    public String sap(String nounA, String nounB) {
+        sap = new SAP(this.g);
+        int id = sap.ancestor(synset1.get(nounA), synset1.get(nounA));
+        String ances = "";
+        for (String s: synset.get(id)) {
+            ances = s + " " + ances;
+        }
+        return ances.trim();
+    }
 
     // // do unit testing of this class
     // public static void main(String[] args)
