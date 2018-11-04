@@ -42,7 +42,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\In.java:7:8: Unused import - java.net.Socket. [UnusedImports]
@@ -114,45 +116,28 @@ Starting audit...
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:24: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:29:26: 'while' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:5:35: Variable 'synset' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:6:35: Variable 'synset1' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:7:13: Variable 'g' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:8:9: Variable 'sap' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:10:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:10:20: Parameter synsets should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:10:36: Parameter hypernyms should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:40:19: '!=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:40:20: ')' is preceded with whitespace. [ParenPad]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:50:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'nouns' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'nouns' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:50:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:55:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'isNoun' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'isNoun' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:55:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:55:27: Parameter word should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:60:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:60:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:60:25: Parameter nounA should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:60:39: Parameter nounB should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:69:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'getGraph' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'getGraph' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:69:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:72: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:74:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:74:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:74:23: Parameter nounA should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:74:37: Parameter nounB should be final. [FinalParameters]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:7: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:11: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:15: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:19: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:32:12: Expected @throws tag for 'Exception'. [JavadocMethod]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:62:21: ')' is preceded with whitespace. [ParenPad]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:72:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'nouns' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'nouns' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:72:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:77:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'isNoun' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'isNoun' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:77:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:82:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:82:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:91:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'getGraph' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'getGraph' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:91:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:94: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:96:5: Class 'WordNet' looks like designed for extension (can be subclassed), but the method 'sap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WordNet' final or making the method 'sap' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:96:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 19 errors.
