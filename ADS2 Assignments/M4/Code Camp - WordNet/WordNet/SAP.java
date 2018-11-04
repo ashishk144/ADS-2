@@ -11,7 +11,7 @@ public class SAP {
 	// length of shortest ancestral path between v and w; -1 if no such path
 	public int length(int v, int w) {
 		BreadthFirstDirectedPaths bfs1 = new BreadthFirstDirectedPaths(graph, v);
-		BreadthFirstDirectedPaths bfs2 = new BreadthFirstDirectedPaths(graph, v);
+		BreadthFirstDirectedPaths bfs2 = new BreadthFirstDirectedPaths(graph, w);
 		Set<Integer> s1 = new HashSet<Integer>();
 		Set<Integer> s2 = new HashSet<Integer>();
 		for (int i = 0; i < graph.vertices(); i++) {

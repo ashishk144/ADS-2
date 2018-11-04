@@ -241,11 +241,12 @@ Starting audit...
 Audit done.
 Checkstyle ends with 35 errors.
 Starting audit...
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:23: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:28:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:31: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:28:22: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:30: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 Audit done.
 Starting audit...
