@@ -42,7 +42,9 @@ class PageRank {
         for (int i = 0; i < this.dig.vertices(); i++) {
             if (dig.outdegree(i) == 0) {
                 for (int j = 0; j < this.dig.vertices(); j++) {
-                    this.dig.addEdge(i, j);
+                    if(i!=j) {
+                        this.dig.addEdge(i, j);
+                    }
                 }
             }
             prstore.put(i, pr);
