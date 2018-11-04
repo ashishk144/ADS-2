@@ -46,7 +46,7 @@ class PageRank {
         Digraph f = this.dig.reverse();
         double fpr = 0.0;
         int count;
-        for (int j = 0; j < 1000; j++) {
+        for (int j = 0; j < 104; j++) {
             for (int i = 0; i < this.dig.vertices(); i++) {
                 fpr = 0.0;
                 for (int k : f.adj(i)) {
@@ -61,7 +61,7 @@ class PageRank {
                 }
                 tr.put(i, prstore.get(i));
             }
-            if(count == this.dig.vertices()-1) {
+            if(count == this.dig.vertices() - 1) {
                 break;
             }
         }

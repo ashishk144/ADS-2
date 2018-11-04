@@ -38,13 +38,11 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:49:29: '1000' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:49:29: '104' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:59:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:64:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:64:44: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:64:45: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M6\ADS-2Week-1\Solution.java:91: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
