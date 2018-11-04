@@ -111,11 +111,10 @@ public class Solution {
                 g.addEdge(Integer.parseInt(s[0]), Integer.parseInt(s[j]));
             }
         }
-
+        System.out.println(g);
         // Create page rank object and pass the graph object to the constructor
         PageRank pr = new PageRank(g);
         // print the page rank object
-        System.out.println(g);
         System.out.println(pr);
         // This part is only for the final test case
 
