@@ -26,10 +26,10 @@ public class WordNet {
      *
      * @param      synsets    The synsets
      * @param      hypernyms  The hypernyms
-     * @throws     <exception_object> { exception_description }
+     * @throws     Exception { exception_description }
      */
-    public WordNet(final String synsets, final String hypernyms)
-    throws Exception {
+    public WordNet(final String synsets,
+                   final String hypernyms) throws Exception {
         In syn = new In(synsets);
         In hyp = new In(hypernyms);
         // String[] syns = syn.readAllLines();
@@ -59,7 +59,7 @@ public class WordNet {
                 cnt++;
             }
         }
-        if (cnt != 1 ) {
+        if (cnt != 1) {
             throw new Exception("Multiple roots");
         }
         DirectedCycle dc = new DirectedCycle(g);
@@ -71,7 +71,7 @@ public class WordNet {
     // returns all WordNet nouns
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -95,7 +95,7 @@ public class WordNet {
     // distance between nounA and nounB (defined below)
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      nounA  The noun a
      * @param      nounB  The noun b
@@ -120,7 +120,7 @@ public class WordNet {
         return this.g;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      nounA  The noun a
      * @param      nounB  The noun b

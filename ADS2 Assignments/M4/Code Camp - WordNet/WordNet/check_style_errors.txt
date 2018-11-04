@@ -116,11 +116,5 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:29:8: Unable to get class information for @throws tag '<exception_object>'. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:32:12: Expected @throws tag for 'Exception'. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:62:21: ')' is preceded with whitespace. [ParenPad]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:73: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:97: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\WordNet.java:122: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
