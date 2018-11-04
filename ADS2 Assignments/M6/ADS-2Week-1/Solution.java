@@ -25,13 +25,6 @@ class PageRank {
         this.dig = g;
         this.pageranks = new double[g.vertices()];
         for (int i = 0; i < g.vertices(); i++) {
-            if (g.outdegree(i) == 0) {
-                for (int j = 0; j < g.vertices(); j++) {
-                    if(i != j) {
-                        g.addEdge(i, j);
-                    }
-                }
-            }
             pageranks[i] = getPR(i);
         }
     }
@@ -52,7 +45,6 @@ class PageRank {
         }
         Digraph f = this.dig.reverse();
         double fpr = 0.0;
-        int count;
         for (int j = 0; j < 104; j++) {
             for (int i = 0; i < this.dig.vertices(); i++) {
                 fpr = 0.0;
@@ -61,15 +53,8 @@ class PageRank {
                 }
                 prstore.put(i, fpr);
             }
-            count = 0;
             for (int i = 0; i < this.dig.vertices(); i++) {
-                if (tr.get(i) == prstore.get(i)) {
-                    count++;
-                }
                 tr.put(i, prstore.get(i));
-            }
-            if(count == this.dig.vertices()) {
-                break;
             }
         }
         return prstore.get(v);
