@@ -1,4 +1,7 @@
-class BreadthFirstDirectedPaths {
+/**
+ * Class for breadth first directed paths.
+ */
+public class BreadthFirstDirectedPaths {
     private static final int INFINITY = Integer.MAX_VALUE;
     private boolean[] marked;  // marked[v] = is there an s->v path?
     private int[] edgeTo;      // edgeTo[v] = last edge on shortest s->v path
@@ -19,52 +22,12 @@ class BreadthFirstDirectedPaths {
         validateVertex(s);
         bfs(G, s);
     }
-
-    /**
-     * Computes the shortest path from any one of the source vertices in {@code sources}
-     * to every other vertex in graph {@code G}.
-     * @param G the digraph
-     * @param sources the source vertices
-     * @throws IllegalArgumentException unless each vertex {@code v} in
-     *         {@code sources} satisfies {@code 0 <= v < V}
-     */
-    public BreadthFirstDirectedPaths(Digraph G, Iterable<Integer> sources) {
-        marked = new boolean[G.vertices()];
-        distTo = new int[G.vertices()];
-        edgeTo = new int[G.vertices()];
-        for (int v = 0; v < G.vertices(); v++)
-            distTo[v] = INFINITY;
-        validateVertices(sources);
-        bfs(G, sources);
-    }
-
     // BFS from single source
     private void bfs(Digraph G, int s) {
         Queue<Integer> q = new Queue<Integer>();
         marked[s] = true;
         distTo[s] = 0;
         q.enqueue(s);
-        while (!q.isEmpty()) {
-            int v = q.dequeue();
-            for (int w : G.adj(v)) {
-                if (!marked[w]) {
-                    edgeTo[w] = v;
-                    distTo[w] = distTo[v] + 1;
-                    marked[w] = true;
-                    q.enqueue(w);
-                }
-            }
-        }
-    }
-
-    // BFS from multiple sources
-    private void bfs(Digraph G, Iterable<Integer> sources) {
-        Queue<Integer> q = new Queue<Integer>();
-        for (int s : sources) {
-            marked[s] = true;
-            distTo[s] = 0;
-            q.enqueue(s);
-        }
         while (!q.isEmpty()) {
             int v = q.dequeue();
             for (int w : G.adj(v)) {
@@ -139,4 +102,5 @@ class BreadthFirstDirectedPaths {
             }
         }
     }
+
 }
