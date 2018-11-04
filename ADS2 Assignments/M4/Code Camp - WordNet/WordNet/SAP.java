@@ -1,11 +1,16 @@
 import java.util.*;
+/**
+ * Class for sap.
+ */
 public class SAP {
     Digraph graph;
-    int dist = Integer.MAX_VALUE;
-    int ancestor = Integer.MAX_VALUE;
+    int dist;
+    int ancestor;
     // constructor takes a digraph (not necessarily a DAG)
     public SAP(Digraph G) {
         this.graph = G;
+        dist = Integer.MAX_VALUE;
+        ancestor = Integer.MAX_VALUE;
     }
 
     // length of shortest ancestral path between v and w; -1 if no such path
