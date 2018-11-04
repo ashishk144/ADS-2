@@ -243,7 +243,7 @@ Checkstyle ends with 35 errors.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:23: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:28:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:31: Line is longer than 80 characters (found 132). [LineLength]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M4\Code Camp - WordNet\WordNet\Solution.java:31: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...

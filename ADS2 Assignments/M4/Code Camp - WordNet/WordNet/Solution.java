@@ -16,10 +16,10 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         In in = new In();
-        String synset = "Files/" + in.readString();
-        String hypernym = "Files/" + in.readString();
+        String synset = "Files/" + in.readLine();
+        String hypernym = "Files/" + in.readLine();
         WordNet word = new WordNet(synset, hypernym);
-        String token = in.readString();
+        String token = in.readLine();
         switch (token) {
             case "Graph":
                 System.out.println(word.getGraph());
@@ -28,7 +28,8 @@ public final class Solution {
                 while(in.hasNextLine()) {
                     String[] line = in.readLine().split(" ");
                     System.out.println(Arrays.toString(line));
-                    System.out.println("distance = " + word.distance(line[0], line[1]) + "ancestor =" + word.sap(line[0], line[1]));
+                    System.out.println("distance = " + word.distance(line[0], line[1])
+                        + " ancestor =" + word.sap(line[0], line[1]));
                 }
                 break;
         }

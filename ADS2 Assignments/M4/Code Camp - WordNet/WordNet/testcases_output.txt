@@ -42,9 +42,10 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:31)
+[enzyme, entity]
+distance = 0 ancestor =enzyme
+[change, casein]
+distance = 0 ancestor =change
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -57,9 +58,18 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:31)
+[DNA_polymerase, animal_fat]
+distance = 0 ancestor =DNA_polymerase
+[DNA_polymerase, animal_oil]
+distance = 0 ancestor =DNA_polymerase
+[DNA_polymerase, coconut_oil]
+distance = 0 ancestor =DNA_polymerase
+[DNA_polymerase, wool_oil]
+distance = 0 ancestor =DNA_polymerase
+[wool_oil, coconut_oil]
+distance = 0 ancestor =wool_oil
+[wool_oil, animal_oil]
+distance = 0 ancestor =wool_oil
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -69,9 +79,12 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:31)
+[Ghedda_wax, Japan_wax]
+distance = 0 ancestor =Ghedda_wax
+[pleura, bayberry_wax]
+distance = 0 ancestor =pleura
+[gondang_wax, candelilla_wax]
+distance = 0 ancestor =gondang_wax fig_wax
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -83,9 +96,16 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:31)
+[b, b]
+distance = 0 ancestor =b
+[c, c]
+distance = 0 ancestor =c
+[d, d]
+distance = 0 ancestor =d
+[e, e]
+distance = 0 ancestor =e
+[f, f]
+distance = 0 ancestor =f
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -102,9 +122,26 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:31)
+[a, b]
+distance = 0 ancestor =a
+[a, c]
+distance = 0 ancestor =a
+[a, d]
+distance = 0 ancestor =a
+[a, e]
+distance = 0 ancestor =a
+[a, f]
+distance = 0 ancestor =a
+[a, g]
+distance = 0 ancestor =a
+[a, h]
+distance = 0 ancestor =a
+[a, i]
+distance = 0 ancestor =a
+[a, j]
+distance = 0 ancestor =a
+[a, k]
+distance = 0 ancestor =a
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -118,9 +155,20 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:31)
+[a, b]
+distance = 0 ancestor =a
+[a, c]
+distance = 0 ancestor =a
+[a, d]
+distance = 0 ancestor =a
+[a, e]
+distance = 0 ancestor =a
+[a, f]
+distance = 0 ancestor =a
+[a, g]
+distance = 0 ancestor =a
+[a, h]
+distance = 0 ancestor =a
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -137,9 +185,26 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:31)
+[a, b]
+distance = 0 ancestor =a
+[a, c]
+distance = 0 ancestor =a
+[a, d]
+distance = 0 ancestor =a
+[a, e]
+distance = 0 ancestor =a
+[a, f]
+distance = 0 ancestor =a
+[a, g]
+distance = 0 ancestor =a
+[a, h]
+distance = 0 ancestor =a
+[a, i]
+distance = 0 ancestor =a
+[a, j]
+distance = 0 ancestor =a
+[a, k]
+distance = 0 ancestor =a
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -199,8 +264,10 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+[null, null]
+Exception in thread "main" java.lang.NullPointerException
+	at SAP.length(SAP.java:68)
+	at WordNet.distance(WordNet.java:52)
 	at Solution.main(Solution.java:31)
 ----------------------------------------
 
@@ -209,8 +276,10 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+[null, x]
+Exception in thread "main" java.lang.NullPointerException
+	at SAP.length(SAP.java:68)
+	at WordNet.distance(WordNet.java:52)
 	at Solution.main(Solution.java:31)
 ----------------------------------------
 
@@ -235,9 +304,40 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-[]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:31)
+[zoospore, zooplankton]
+distance = 0 ancestor =zoospore
+[young_bird, yeoman]
+distance = 0 ancestor =young_bird
+[xerostomia, xerox]
+distance = 0 ancestor =xerostomia dry_mouth
+[workspace, workstation]
+distance = 0 ancestor =workspace
+[1530s, 1750s]
+distance = 0 ancestor =1530s
+[22-karat_gold, pure_gold]
+distance = 0 ancestor =22-karat_gold
+[Aberdeen, port]
+distance = 0 ancestor =Aberdeen
+[p, q]
+distance = 0 ancestor =P p
+[x, y]
+distance = 0 ancestor =X x ex
+[Cleopatra, Antony]
+distance = 0 ancestor =Cleopatra
+[9/11, September]
+distance = 0 ancestor =9/11 9-11 September_11 Sept._11 Sep_11
+[9/11, Sep_11]
+distance = 0 ancestor =9/11 9-11 September_11 Sept._11 Sep_11
+[1, 2]
+distance = 0 ancestor =one 1 I ace single unity
+[1, a]
+distance = 0 ancestor =one 1 I ace single unity
+[z, 1530s]
+distance = 0 ancestor =Z z zee zed ezed izzard
+[era, era]
+distance = 0 ancestor =era epoch
+[graph, tree]
+distance = 0 ancestor =character graph grapheme graphic_symbol
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
