@@ -23,7 +23,7 @@ public final class Solution {
         for (int i = 0; i < edges; i++) {
             String[] inp = scan.nextLine().split(" ");
             Edge e = new Edge (Integer.parseInt(inp[0]), Integer.parseInt(
-                inp[0]), Double.parseDouble(inp[0]));
+                inp[1]), Double.parseDouble(inp[2]));
             ewg.addEdge(e);
         }
         LazyPrimMST mst = new LazyPrimMST(ewg);
