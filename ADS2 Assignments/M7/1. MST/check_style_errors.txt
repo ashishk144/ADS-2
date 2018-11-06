@@ -16,34 +16,3 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
-Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:4: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:9: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:15:15: Parameter n should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:16: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:27: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:30: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:33:21: Parameter p should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:50: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:56: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:61:30: Parameter p should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:61:37: Parameter q should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:64: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:66: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:74:23: Parameter p should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:74:30: Parameter q should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:77: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:80: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:81: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:90:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:90:27: Parameter p should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:93: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:93: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:93:92: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M7\1. MST\UF.java:93:93: '-' is not followed by whitespace. [WhitespaceAround]
-Audit done.
-Checkstyle ends with 28 errors.
