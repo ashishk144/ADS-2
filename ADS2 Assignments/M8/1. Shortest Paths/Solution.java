@@ -36,7 +36,7 @@ public final class Solution {
             inp = scan.nextLine().split(" ");
             DijkstraUndirectedSP djsp = new DijkstraUndirectedSP(ewg,
                 ids.get(inp[0]));
-            System.out.println((int)djsp.distTo(ids.get(inp[1])));
+            System.out.println((int) djsp.distTo(ids.get(inp[1])));
         }
     }
 }

@@ -410,6 +410,4 @@ public class IndexMinPQ<Key extends Comparable<Key>>
       return copy.delMin();
     }
   }
-
-
 }
