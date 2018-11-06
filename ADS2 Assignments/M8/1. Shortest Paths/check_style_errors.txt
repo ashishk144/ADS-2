@@ -11,11 +11,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M8\1. Shortest Paths\Solution.java:7: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M8\1. Shortest Paths\Solution.java:19:29: Parameter args should be final. [FinalParameters]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M8\1. Shortest Paths\Solution.java:25:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
