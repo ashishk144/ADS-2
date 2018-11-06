@@ -1,0 +1,60 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+614708.00000
+
+Your Output: 
+Error: opening registry key 'Software\JavaSoft\JRE'
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+1.81000
+
+Your Output: 
+Error: opening registry key 'Software\JavaSoft\JRE'
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+10.46351
+
+Your Output: 
+Error: opening registry key 'Software\JavaSoft\JRE'
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+37.00000
+
+Your Output: 
+Error: opening registry key 'Software\JavaSoft\JRE'
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+19.00000
+
+Your Output: 
+Error: opening registry key 'Software\JavaSoft\JRE'
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+2.00000
+
+Your Output: 
+Error: opening registry key 'Software\JavaSoft\JRE'
+Error: could not find java.dll
+Error: Could not find Java SE Runtime Environment.
+----------------------------------------
+
