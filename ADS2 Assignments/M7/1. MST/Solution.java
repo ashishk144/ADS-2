@@ -22,7 +22,7 @@ public final class Solution {
         EdgeWeightedGraph ewg = new EdgeWeightedGraph(vert);
         for (int i = 0; i < edges; i++) {
             String[] inp = scan.nextLine().split(" ");
-            Edge e = new Edge (Integer.parseInt(inp[0]), Integer.parseInt(
+            Edge e = new Edge(Integer.parseInt(inp[0]), Integer.parseInt(
                                    inp[1]), Double.parseDouble(inp[2]));
             ewg.addEdge(e);
         }
