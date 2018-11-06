@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -22,7 +22,7 @@ public class Solution {
         EdgeWeightedGraph ewg = new EdgeWeightedGraph(Integer.parseInt(v[0]));
         HashMap<String, Integer> ids = new HashMap<String, Integer>();
         String[] inp = scan.nextLine().split(" ");
-        for(int i = 0; i < inp.length; i++) {
+        for (int i = 0; i < inp.length; i++) {
             ids.put(inp[i], i);
         }
         for (int i = 0; i < Integer.parseInt(v[1]); i++) {
@@ -36,7 +36,7 @@ public class Solution {
             inp = scan.nextLine().split(" ");
             DijkstraUndirectedSP djsp = new DijkstraUndirectedSP(ewg,
                 ids.get(inp[0]));
-            System.out.println(djsp.distTo(ids.get(inp[1])));
+            System.out.println((int)djsp.distTo(ids.get(inp[1])));
         }
     }
 }

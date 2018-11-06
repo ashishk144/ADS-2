@@ -11,9 +11,8 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M8\1. Shortest Paths\Solution.java:7: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M8\1. Shortest Paths\Solution.java:25:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M8\1. Shortest Paths\Solution.java:39:37: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
