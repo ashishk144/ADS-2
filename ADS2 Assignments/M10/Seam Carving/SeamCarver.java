@@ -16,8 +16,8 @@ public class SeamCarver {
 			throw new Exception("picture is null");
 		} else {
 			this.pic = picture;
-			// this.width = picture.width();
-			// this.height = picture.height();
+			this.width = picture.width();
+			this.height = picture.height();
 			this.energymat = new double[this.height][this.width];
 			for (int i = 0; i < this.height; i++) {
 				for (int j = 0; j < this.width; j++) {
@@ -28,16 +28,16 @@ public class SeamCarver {
 	}
 	// current picture
 	public Picture picture() {
-		return pic;
+		return this.pic;
 	}
 	// width of current picture
 	public int width() {
-		return pic.width();
+		return this.width;
 	}
 
 	// height of current picture
 	public int height() {
-		return pic.height();
+		return this.height;
 	}
 
 	// energy of pixel at column x and row y
@@ -50,8 +50,8 @@ public class SeamCarver {
 			double sum = Math.pow(rpix.getRed() - lpix.getRed(), 2)
 				+ Math.pow(rpix.getBlue() - lpix.getBlue(), 2)
 				+ Math.pow(rpix.getGreen() - lpix.getGreen(), 2);
-			Color tpix = pic.get(x - 1, y);
-			Color bpix = pic.get(x + 1, y);
+			Color tpix = pic.get(x, y - 1);
+			Color bpix = pic.get(x, y + 1);
 			sum += Math.pow(tpix.getRed() - bpix.getRed(), 2)
 				+ Math.pow(tpix.getBlue() - bpix.getBlue(), 2)
 				+ Math.pow(tpix.getGreen() - bpix.getGreen(), 2);
