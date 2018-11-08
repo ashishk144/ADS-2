@@ -19,8 +19,8 @@ public class SeamCarver {
 		this.width = picture.width();
 		this.height = picture.height();
 		this.energymat = new Double[height][width];
-		for (int i = 0; i < height; i++) {
-			for (int j = 0; j < width; j++) {
+		for (int i = 0; i < this.height; i++) {
+			for (int j = 0; j < this.width; j++) {
 				energymat[i][j] = energy(i, j);
 			}
 		}
@@ -31,12 +31,12 @@ public class SeamCarver {
 	}
 	// width of current picture
 	public int width() {
-		return width;
+		return this.width;
 	}
 
 	// height of current picture
 	public int height() {
-		return height;
+		return this.height;
 	}
 
 	// energy of pixel at column x and row y
