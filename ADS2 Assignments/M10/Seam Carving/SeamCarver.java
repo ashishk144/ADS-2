@@ -14,14 +14,15 @@ public class SeamCarver {
 	public SeamCarver(Picture picture) throws Exception {
 		if (picture == null) {
 			throw new Exception("picture is null");
-		}
-		this.pic = picture;
-		this.width = picture.width();
-		this.height = picture.height();
-		this.energymat = new double[this.height][this.width];
-		for (int i = 0; i < this.height; i++) {
-			for (int j = 0; j < this.width; j++) {
-				energymat[i][j] = energy(i, j);
+		} else{
+			this.pic = picture;
+			this.width = picture.width();
+			this.height = picture.height();
+			this.energymat = new double[this.height][this.width];
+			for (int i = 0; i < this.height; i++) {
+				for (int j = 0; j < this.width; j++) {
+					energymat[i][j] = energy(i, j);
+				}
 			}
 		}
 	}
