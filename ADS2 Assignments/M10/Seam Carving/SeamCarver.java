@@ -2,7 +2,7 @@ import java.awt.Color;
 
 public class SeamCarver {
 	private Picture pic;
-	private Double[][] energymat;
+	private double[][] energymat;
 	private int width, height;
 	// create a seam carver object based on the given picture
 
@@ -18,12 +18,12 @@ public class SeamCarver {
 		this.pic = picture;
 		this.width = picture.width();
 		this.height = picture.height();
-		this.energymat = new Double[height][width];
-		// for (int i = 0; i < this.height; i++) {
-		// 	for (int j = 0; j < this.width; j++) {
-		// 		energymat[i][j] = energy(i, j);
-		// 	}
-		// }
+		this.energymat = new double[this.height][this.width];
+		for (int i = 0; i < this.height; i++) {
+			for (int j = 0; j < this.width; j++) {
+				energymat[i][j] = energy(i, j);
+			}
+		}
 	}
 	// current picture
 	public Picture picture() {
