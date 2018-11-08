@@ -14,10 +14,10 @@ public class SeamCarver {
 	public SeamCarver(Picture picture) throws Exception {
 		if (picture == null) {
 			throw new Exception("picture is null");
-		} else{
+		} else {
 			this.pic = picture;
-			this.width = picture.width();
-			this.height = picture.height();
+			// this.width = picture.width();
+			// this.height = picture.height();
 			this.energymat = new double[this.height][this.width];
 			for (int i = 0; i < this.height; i++) {
 				for (int j = 0; j < this.width; j++) {
@@ -28,16 +28,16 @@ public class SeamCarver {
 	}
 	// current picture
 	public Picture picture() {
-		return this.pic;
+		return pic;
 	}
 	// width of current picture
 	public int width() {
-		return this.width - 1;
+		return pic.width();
 	}
 
 	// height of current picture
 	public int height() {
-		return this.height - 1;
+		return pic.height();
 	}
 
 	// energy of pixel at column x and row y
