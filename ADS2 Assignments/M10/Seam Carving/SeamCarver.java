@@ -19,9 +19,9 @@ public class SeamCarver {
 		this.width = picture.width();
 		this.height = picture.height();
 		this.energymat = new Double[height][width];
-		for (int i = 0; i < this.width; i++) {
-			for (int j = 0; j < this.height; j++) {
-				energymat[i][j] = energy(i, j);
+		for (int i = 0; i < this.height; i++) {
+			for (int j = 0; j < this.width; j++) {
+				energymat[i][j] = energy(j, i);
 			}
 		}
 	}
