@@ -15,11 +15,11 @@ public class SeamCarver {
 		this.pic = picture;
 		this.width = picture.width();
 		this.height = picture.height();
-		for (int i = 0; i < height; i++) {
-			for (int j = 0; j < width; j++) {
-				energymat[i][j] = energy(i, j);
-			}
-		}
+		// for (int i = 0; i < height; i++) {
+		// 	for (int j = 0; j < width; j++) {
+		// 		energymat[i][j] = energy(i, j);
+		// 	}
+		// }
 	}
 	// current picture
 	public Picture picture() {
