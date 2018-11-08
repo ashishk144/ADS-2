@@ -49,8 +49,8 @@ public class SeamCarver {
 			double sum = Math.pow(rpix.getRed() - lpix.getRed(), 2)
 				+ Math.pow(rpix.getBlue() - lpix.getBlue(), 2)
 				+ Math.pow(rpix.getGreen() - lpix.getGreen(), 2);
-			Color tpix = pic.get(x - 1, y);
-			Color bpix = pic.get(x + 1, y);
+			Color tpix = pic.get(x, y - 1);
+			Color bpix = pic.get(x, y + 1);
 			sum += Math.pow(tpix.getRed() - bpix.getRed(), 2)
 				+ Math.pow(tpix.getBlue() - bpix.getBlue(), 2)
 				+ Math.pow(tpix.getGreen() - bpix.getGreen(), 2);
