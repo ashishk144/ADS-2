@@ -11,7 +11,10 @@ public class SeamCarver {
 	 * Complexity (width*height)
 	 * @param      picture  The picture
 	 */
-	public SeamCarver(Picture picture) {
+	public SeamCarver(Picture picture) throws Exception {
+		if (picture == null) {
+			throw new Exception("picture is null");
+		}
 		this.pic = picture;
 		this.width = picture.width();
 		this.height = picture.height();
