@@ -32,12 +32,12 @@ public class SeamCarver {
 	}
 	// width of current picture
 	public int width() {
-		return this.width;
+		return this.width - 1;
 	}
 
 	// height of current picture
 	public int height() {
-		return this.height;
+		return this.height - 1;
 	}
 
 	// energy of pixel at column x and row y
