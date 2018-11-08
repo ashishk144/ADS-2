@@ -1,10 +1,25 @@
+import java.awt.Color;
 
 public class SeamCarver {
 	private Picture pic;
+	private Double[][] energymat;
+	private int width, height;
 	// create a seam carver object based on the given picture
+
+	/**
+	 * Constructs the object.
+	 * Complexity (width*height)
+	 * @param      picture  The picture
+	 */
 	public SeamCarver(Picture picture) {
 		this.pic = picture;
-		System.out.println(this.pic);
+		this.width = picture.width();
+		this.height = picture.height();
+		for (int i = 0; i < height; i++) {
+			for (int j = 0; j < width; j++) {
+				energymat[i][j] = energy(i, j);
+			}
+		}
 	}
 	// current picture
 	public Picture picture() {
@@ -12,17 +27,31 @@ public class SeamCarver {
 	}
 	// width of current picture
 	public int width() {
-		return 0;
+		return width;
 	}
 
 	// height of current picture
 	public int height() {
-		return 0;
+		return width;
 	}
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		return 0;
+		if(x == 0 || x == width - 1 || y == 0 || y == height - 1) {
+			return 1000.0;
+		} else {
+			Color lpix = pic.get(x - 1, y);
+			Color rpix = pic.get(x + 1, y);
+			double sum = Math.pow(rpix.getRed() - lpix.getRed(), 2)
+				+ Math.pow(rpix.getBlue() - lpix.getBlue(), 2)
+				+ Math.pow(rpix.getGreen() - lpix.getGreen(), 2);
+			Color tpix = pic.get(x - 1, y);
+			Color bpix = pic.get(x + 1, y);
+			sum += Math.pow(tpix.getRed() - bpix.getRed(), 2)
+				+ Math.pow(tpix.getBlue() - bpix.getBlue(), 2)
+				+ Math.pow(tpix.getGreen() - bpix.getGreen(), 2);
+			return Math.sqrt(sum);
+		}
 	}
 
 	// sequence of indices for horizontal seam
