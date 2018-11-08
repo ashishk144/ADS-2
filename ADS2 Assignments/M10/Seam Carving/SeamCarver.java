@@ -32,7 +32,7 @@ public class SeamCarver {
 
 	// height of current picture
 	public int height() {
-		return width;
+		return height;
 	}
 
 	// energy of pixel at column x and row y
@@ -50,6 +50,7 @@ public class SeamCarver {
 			sum += Math.pow(tpix.getRed() - bpix.getRed(), 2)
 				+ Math.pow(tpix.getBlue() - bpix.getBlue(), 2)
 				+ Math.pow(tpix.getGreen() - bpix.getGreen(), 2);
+				System.out.println(sum);
 			return Math.sqrt(sum);
 		}
 	}
