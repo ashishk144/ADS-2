@@ -38,7 +38,7 @@ public class LazyPrimMST {
 
     /**
      * {Private Accessor method of prim}.
-     *
+     * Complextiy (E logE)
      * @param      g     {EdgeWeightedGraph}
      * @param      s     {Vertex}
      */
@@ -66,7 +66,7 @@ public class LazyPrimMST {
     /**
      * {add all edges e incident to v onto pq if the.
      * other endpoint has not yet been scanned}
-     *
+     * Complexity V.
      * @param      g     {EdgeWeightedGraph}
      * @param      v     {Vertex}
      */
