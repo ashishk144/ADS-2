@@ -111,7 +111,7 @@ public class EdgeWeightedGraph {
             for (int v = 0; v < vertices; v++) {
                 s += v + ": ";
                 for (Edge w : adj[v]) {
-                    s += w + " ";
+                    s += w + "  ";
                 }
                 s += '\n';
             }
