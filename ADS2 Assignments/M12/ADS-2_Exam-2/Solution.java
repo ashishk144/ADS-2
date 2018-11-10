@@ -14,7 +14,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // Self loops are not allowed...
         // Parallel Edges are allowed...
         // Take the Graph input here...
@@ -23,11 +23,11 @@ public class Solution {
         int k = Integer.parseInt(scan.nextLine());
         Edge e;
         EdgeWeightedGraph ewg = new EdgeWeightedGraph(n);
-        for(int i = 0; i < k; i++) {
+        for (int i = 0; i < k; i++) {
             String[] inp = scan.nextLine().split(" ");
-            if(!inp[0].equals(inp[1])) {
+            if (!inp[0].equals(inp[1])) {
                 e = new Edge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]),
-                    Integer.parseInt(inp[2]));
+                             Integer.parseInt(inp[2]));
                 ewg.addEdge(e);
             }
         }
