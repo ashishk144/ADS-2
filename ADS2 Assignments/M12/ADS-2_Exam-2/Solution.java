@@ -79,13 +79,13 @@ public class Solution {
                         sum += dj.distTo(b);
                         String s = "";
                         for(Edge edg: dj.pathTo(b)) {
-                            s += edg + " ";
+                            s += edg.either() + " ";
                         }
                         dj = new DijkstraUndirectedSP(ewg, b);
                         if (dj.hasPathTo(c)) {
                             sum += dj.distTo(c);
                             for(Edge edg: dj.pathTo(c)) {
-                                s += edg + " ";
+                                s += edg.either() + " ";
                             }
                             System.out.println(sum);
                             System.out.println(s.trim());
