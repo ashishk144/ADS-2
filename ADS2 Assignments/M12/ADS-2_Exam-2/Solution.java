@@ -51,7 +51,7 @@ public class Solution {
                 while (scan.hasNextLine()) {
                     inp = scan.nextLine().split(" ");
                     dj = new DijkstraUndirectedSP(ewg, Integer.parseInt(
-                        inp[0]));
+                                                      inp[0]));
                     if (dj.hasPathTo(Integer.parseInt(inp[1]))) {
                         System.out.println(dj.distTo(Integer.parseInt(
                                                          inp[1])));
@@ -68,6 +68,25 @@ public class Solution {
                 // third is the destination.
                 // If the path exists print the distance between them.
                 // Other wise print "No Path Found."
+                while (scan.hasNextLine()) {
+                    inp = scan.nextLine().split(" ");
+                    dj = new DijkstraUndirectedSP(ewg, Integer.parseInt(
+                                                      inp[0]));
+                    double sum = 0;
+                    if (dj.hasPathTo(Integer.parseInt(inp[1]))) {
+                        sum += dj.distTo(Integer.parseInt(inp[1]));
+                        dj = new DijkstraUndirectedSP(ewg, Integer.parseInt(
+                                                      inp[1]));
+                        if (dj.hasPathTo(Integer.parseInt(inp[2]))) {
+                            sum += dj.distTo(Integer.parseInt(inp[2]));
+                            System.out.println(sum);
+                        } else {
+                            throw new Exception("No Path Found.");
+                        }
+                    } else {
+                        throw new Exception("No Path Found.");
+                    }
+                }
                 break;
 
             default:
