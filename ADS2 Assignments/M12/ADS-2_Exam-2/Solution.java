@@ -77,15 +77,18 @@ public class Solution {
                     double sum = 0;
                     if (dj.hasPathTo(b)) {
                         sum += dj.distTo(b);
-                        String s = "";
+                        String s = a + " ";
+                        int vert = a;
                         for(Edge edg: dj.pathTo(b)) {
-                            s += edg.other(edg.either()) + " ";
+                            s += edg.other(vert) + " ";
+                            vert = edg.other(vert);
                         }
                         dj = new DijkstraUndirectedSP(ewg, b);
                         if (dj.hasPathTo(c)) {
                             sum += dj.distTo(c);
                             for(Edge edg: dj.pathTo(c)) {
-                                s += edg.other(edg.either()) + " ";
+                                s += edg.other(vert) + " ";
+                                vert = edg.other(vert);
                             }
                             System.out.println(sum);
                             System.out.println(s.trim());
