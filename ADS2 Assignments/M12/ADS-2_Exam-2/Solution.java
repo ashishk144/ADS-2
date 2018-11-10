@@ -50,7 +50,8 @@ public class Solution {
                 DijkstraUndirectedSP dj;
                 while (scan.hasNextLine()) {
                     inp = scan.nextLine().split(" ");
-                    dj = new DijkstraUndirectedSP(ewg, Integer.parseInt(inp[0]));
+                    dj = new DijkstraUndirectedSP(ewg, Integer.parseInt(
+                        inp[0]));
                     if (dj.hasPathTo(Integer.parseInt(inp[1]))) {
                         System.out.println(dj.distTo(Integer.parseInt(
                                                          inp[1])));
