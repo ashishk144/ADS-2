@@ -22,12 +22,12 @@ public class Solution {
         int n = Integer.parseInt(scan.nextLine());
         int k = Integer.parseInt(scan.nextLine());
         String[] inp;
-        DirectedEdge e;
-        EdgeWeightedDigraph ewg = new EdgeWeightedDigraph(n);
+        Edge e;
+        EdgeWeightedGraph ewg = new EdgeWeightedGraph(n);
         for (int i = 0; i < k; i++) {
             inp = scan.nextLine().split(" ");
             if (!inp[0].equals(inp[1])) {
-                e = new DirectedEdge(Integer.parseInt(inp[0]),
+                e = new Edge(Integer.parseInt(inp[0]),
                              Integer.parseInt(inp[1]),
                              Integer.parseInt(inp[2]));
                 ewg.addEdge(e);
@@ -47,10 +47,10 @@ public class Solution {
                 // First is the source and second is the destination.
                 // If the path exists print the distance between them.
                 // Other wise print "No Path Found."
-                DijkstraSP dj;
+                DijkstraUndirectedSP dj;
                 while (scan.hasNextLine()) {
                     inp = scan.nextLine().split(" ");
-                    dj = new DijkstraSP(ewg, Integer.parseInt(inp[0]));
+                    dj = new DijkstraUndirectedSP(ewg, Integer.parseInt(inp[0]));
                     if (dj.hasPathTo(Integer.parseInt(inp[1]))) {
                         System.out.println(dj.distTo(Integer.parseInt(
                                                          inp[1])));
