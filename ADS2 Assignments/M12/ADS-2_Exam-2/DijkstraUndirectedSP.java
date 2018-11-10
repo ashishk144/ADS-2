@@ -125,8 +125,6 @@ public class DijkstraUndirectedSP {
         }
         return path;
     }
-
-
     // check optimality conditions:
     // (i) for all edges e = v-w:            distTo[w] <= distTo[v] + e.weight()
     // (ii) for all edge e = v-w on the SPT: distTo[w] == distTo[v] + e.weight()
