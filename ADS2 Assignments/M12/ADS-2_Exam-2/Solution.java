@@ -70,16 +70,25 @@ public class Solution {
                 // Other wise print "No Path Found."
                 while (scan.hasNextLine()) {
                     inp = scan.nextLine().split(" ");
-                    dj = new DijkstraUndirectedSP(ewg, Integer.parseInt(
-                                                      inp[0]));
+                    int a = Integer.parseInt(inp[0]);
+                    int b = Integer.parseInt(inp[1]);
+                    int c = Integer.parseInt(inp[2]);
+                    dj = new DijkstraUndirectedSP(ewg, a);
                     double sum = 0;
-                    if (dj.hasPathTo(Integer.parseInt(inp[1]))) {
-                        sum += dj.distTo(Integer.parseInt(inp[1]));
-                        dj = new DijkstraUndirectedSP(ewg, Integer.parseInt(
-                                                      inp[1]));
-                        if (dj.hasPathTo(Integer.parseInt(inp[2]))) {
-                            sum += dj.distTo(Integer.parseInt(inp[2]));
+                    if (dj.hasPathTo(b)) {
+                        sum += dj.distTo(b);
+                        String s = "";
+                        for(Edge edg: dj.pathTo(b)) {
+                            s += edg + " ";
+                        }
+                        dj = new DijkstraUndirectedSP(ewg, b);
+                        if (dj.hasPathTo(c)) {
+                            sum += dj.distTo(c);
+                            for(Edge edg: dj.pathTo(c)) {
+                                s += edg + " ";
+                            }
                             System.out.println(sum);
+                            System.out.println(s.trim());
                         } else {
                             throw new Exception("No Path Found.");
                         }
