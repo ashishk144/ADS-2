@@ -1,3 +1,11 @@
+/**
+ * 3-way string quick sort algorithm is used to sort the given set of
+ * testcases. The 3 way quick sort does not start sorting until
+ * there is a change in the prefixes of the values. In case of LSD,
+ * the LSD algorithm checks through each and every element in the string
+ * and then returns the sorted string.
+ */
+
 import java.util.Scanner;
 import java.util.Arrays;
 
