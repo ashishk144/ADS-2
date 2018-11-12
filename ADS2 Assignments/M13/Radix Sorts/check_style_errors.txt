@@ -1,0 +1,19 @@
+Starting audit...
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:37: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:64: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:65: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:66: 'else' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:71: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:85: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:86: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:115: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:116: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:128:37: Parameter a should be final. [FinalParameters]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:129: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Quick3string.java:130: 'if' construct must use '{}'s. [NeedBraces]
+Audit done.
+Checkstyle ends with 12 errors.
+Starting audit...
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M13\Radix Sorts\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+Audit done.
+Checkstyle ends with 1 errors.
