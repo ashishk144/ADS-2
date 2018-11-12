@@ -65,11 +65,9 @@ public final class Quick3string {
             int t = charAt(a[i], d);
             if (t < v) {
                 exch(a, lt++, i++);
-            }
-            else if (t > v) {
+            } else if (t > v) {
                 exch(a, i, gt--);
-            }
-            else {
+            } else {
                 i++;
             }
         }
@@ -141,7 +139,7 @@ public final class Quick3string {
      *
      * @return     True if sorted, False otherwise.
      */
-    private static boolean isSorted(String[] a) {
+    private static boolean isSorted(final String[] a) {
         for (int i = 1; i < a.length; i++) {
             if (a[i].compareTo(a[i - 1]) < 0) {
                 return false;
