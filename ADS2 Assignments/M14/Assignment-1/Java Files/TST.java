@@ -38,6 +38,7 @@ public class TST<Value> {
 
     /**
      * Returns the value associated with the given key.
+     * Complexity L+logN
      * @param key the key
      * @return the value associated with the given key if the key is in the symbol table
      *     and {@code null} if the key is not in the symbol table
@@ -68,6 +69,7 @@ public class TST<Value> {
      * Inserts the key-value pair into the symbol table, overwriting the old value
      * with the new value if the key is already in the symbol table.
      * If the value is {@code null}, this effectively deletes the key from the symbol table.
+     * Complexity L+logN
      * @param key the key
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
