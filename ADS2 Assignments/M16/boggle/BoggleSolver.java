@@ -19,13 +19,13 @@ public class BoggleSolver {
         int cols = board.cols();
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                Boolean[][] marked = new Boolean[rows][cols];
+                boolean[][] marked = new boolean[rows][cols];
                 generateValidWords(board, i, j, "", marked, validWords);
             }
         }
         return validWords;
     }
-    private void generateValidWords(BoggleBoard b, int row, int col, String prefix, Boolean[][] check, TrieSET set) {
+    private void generateValidWords(BoggleBoard b, int row, int col, String prefix, boolean[][] check, TrieSET set) {
         if (check[row][col]) {
             return;
         }
