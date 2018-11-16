@@ -23,6 +23,8 @@ public class BoggleSolver {
                 generateValidWords(board, i, j, "", marked, validWords);
             }
         }
+        // validWords.forEach(e -> System.out.print(e + ","));
+        // System.out.println();
         return validWords;
     }
     private void generateValidWords(BoggleBoard b, int row, int col, String prefix, boolean[][] check, TrieSET set) {
@@ -32,19 +34,18 @@ public class BoggleSolver {
         char letter = b.getLetter(row, col);
         String word = prefix + letter;
         if (word.length() > 2 && dic.contains(word)) {
-            System.out.println(word);
             set.add(word);
         }
         if (dic.keysWithPrefix(word) == null) {
             return;
         }
         check[row][col] = true;
-        for (int i = -1; i < row; i++) {
-            for (int j = -1; j < row; j++) {
+        for (int i = -1; i <= 1; i++) {
+            for (int j = -1; j <= 1; j++) {
                 if (i == 0 && j == 0) {
                     continue;
                 }
-                if (row + i > 0 && col + j > 0 && row + i < b.rows() && col + j < b.cols())
+                if (row + i >= 0 && col + j >= 0 && row + i < b.rows() && col + j < b.cols())
                     generateValidWords(b, row+i, col+j, word, check, set);
             }
         }
