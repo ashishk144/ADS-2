@@ -34,10 +34,10 @@ public class BoggleSolver {
         if (word.length() > 2 && dic.contains(word)) {
             set.add(word);
         }
-        check[row][col] = true;
         if (dic.keysWithPrefix(word) == null) {
             return;
         }
+        check[row][col] = true;
         for (int i = -1; i < row; i++) {
             for (int j = -1; j < row; j++) {
                 if (i == 0 && j == 0) {
