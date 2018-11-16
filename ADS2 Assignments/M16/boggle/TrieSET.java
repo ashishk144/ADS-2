@@ -36,7 +36,7 @@ public class TrieSET implements Iterable<String> {
         if (x == null) return null;
         if (d == key.length()) return x;
         char c = key.charAt(d);
-        return get(x.next[c], key, d+1);
+        return get(x.next[c - 'A'], key, d+1);
     }
 
     /**
@@ -57,7 +57,7 @@ public class TrieSET implements Iterable<String> {
         }
         else {
             char c = key.charAt(d);
-            x.next[c] = add(x.next[c], key, d+1);
+            x.next[c - 'A'] = add(x.next[c - 'A'], key, d+1);
         }
         return x;
     }
@@ -104,9 +104,9 @@ public class TrieSET implements Iterable<String> {
     private void collect(Node x, StringBuilder prefix, Queue<String> results) {
         if (x == null) return;
         if (x.isString) results.enqueue(prefix.toString());
-        for (char c = 0; c < R; c++) {
+        for (char c = 'A'; c < 'A' + R; c++) {
             prefix.append(c);
-            collect(x.next[c], prefix, results);
+            collect(x.next[c - 'A'], prefix, results);
             prefix.deleteCharAt(prefix.length() - 1);
         }
     }
@@ -134,15 +134,15 @@ public class TrieSET implements Iterable<String> {
             return;
         char c = pattern.charAt(d);
         if (c == '.') {
-            for (char ch = 0; ch < R; ch++) {
+            for (char ch = 'A'; ch < 'A' + R; ch++) {
                 prefix.append(ch);
-                collect(x.next[ch], prefix, pattern, results);
+                collect(x.next[ch - 'A'], prefix, pattern, results);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
         }
         else {
             prefix.append(c);
-            collect(x.next[c], prefix, pattern, results);
+            collect(x.next[c - 'A'], prefix, pattern, results);
             prefix.deleteCharAt(prefix.length() - 1);
         }
     }
@@ -171,7 +171,7 @@ public class TrieSET implements Iterable<String> {
         if (x.isString) length = d;
         if (d == query.length()) return length;
         char c = query.charAt(d);
-        return longestPrefixOf(x.next[c], query, d+1, length);
+        return longestPrefixOf(x.next[c - 'A'], query, d+1, length);
     }
 
     /**
@@ -192,13 +192,13 @@ public class TrieSET implements Iterable<String> {
         }
         else {
             char c = key.charAt(d);
-            x.next[c] = delete(x.next[c], key, d+1);
+            x.next[c - 'A'] = delete(x.next[c - 'A'], key, d+1);
         }
 
         // remove subtrie rooted at x if it is completely empty
         if (x.isString) return x;
         for (int c = 0; c < R; c++)
-            if (x.next[c] != null)
+            if (x.next[c - 'A'] != null)
                 return x;
         return null;
     }

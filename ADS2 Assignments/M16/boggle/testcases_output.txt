@@ -235,6 +235,6 @@ Expected Output:
 board is null
 
 Your Output: 
-null
+Index 33 out of bounds for length 26
 ----------------------------------------
 
