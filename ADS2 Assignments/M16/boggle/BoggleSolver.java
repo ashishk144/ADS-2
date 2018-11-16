@@ -32,6 +32,7 @@ public class BoggleSolver {
         char letter = b.getLetter(row, col);
         String word = prefix + letter;
         if (word.length() > 2 && dic.contains(word)) {
+            System.out.println(word);
             set.add(word);
         }
         if (dic.keysWithPrefix(word) == null) {
