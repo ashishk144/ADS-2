@@ -44,7 +44,7 @@ public class BoggleSolver {
                     continue;
                 }
                 if (row + i > 0 && col + j > 0 && row + i < b.rows() && col + j < b.cols())
-                    generateValidWords(b, i, j, word, check, set);
+                    generateValidWords(b, row+i, col+j, word, check, set);
             }
         }
         check[row][col] = false;

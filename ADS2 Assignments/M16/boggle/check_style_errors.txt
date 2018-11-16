@@ -116,6 +116,10 @@ Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:28:104: Parameter set should be final. [FinalParameters]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:46: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:46: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:47:46: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:47:47: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:47:53: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:47:54: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:52: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:53: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:54:5: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -131,7 +135,7 @@ Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:65:31: '8' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:66:24: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 42 errors.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
