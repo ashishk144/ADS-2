@@ -1,7 +1,7 @@
 import java.util.Iterator;
 
 public class TrieSET implements Iterable<String> {
-    private static final int R = 26;        // extended ASCII
+    private static final int R = 26;        // Alphabet Size
 
     private Node root;      // root of trie
     private int n;          // number of keys in trie

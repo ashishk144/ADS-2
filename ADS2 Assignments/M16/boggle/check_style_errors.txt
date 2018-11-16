@@ -114,7 +114,7 @@ Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:33:70: Parameter prefix should be final. [FinalParameters]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:33:85: Parameter check should be final. [FinalParameters]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:33:104: Parameter set should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:39:11: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:39:11: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:56: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:56: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M16\boggle\BoggleSolver.java:57:46: '+' is not preceded with whitespace. [WhitespaceAround]
