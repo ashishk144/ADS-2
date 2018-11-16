@@ -32,7 +32,12 @@ public class BoggleSolver {
             return;
         }
         char letter = b.getLetter(row, col);
-        String word = prefix + letter;
+        String word;
+        if(letter == 'Q') {
+            word = prefix + letter + 'U';
+        } else {
+            word = prefix + letter;
+        }
         if (word.length() > 2 && dic.contains(word)) {
             set.add(word);
         }
