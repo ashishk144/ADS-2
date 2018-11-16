@@ -100,6 +100,13 @@ public class TrieSET implements Iterable<String> {
         collect(x, new StringBuilder(prefix), results);
         return results;
     }
+    public boolean hasPrefix(String prefix) {
+        Node x = get(root, prefix, 0);
+        if(x == null) {
+            return false;
+        }
+        return true;
+    }
 
     private void collect(Node x, StringBuilder prefix, Queue<String> results) {
         if (x == null) return;

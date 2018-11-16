@@ -41,7 +41,7 @@ public class BoggleSolver {
         if (word.length() > 2 && dic.contains(word)) {
             set.add(word);
         }
-        if (dic.keysWithPrefix(word) == null) {
+        if (!dic.hasPrefix(word)) {
             return;
         }
         check[row][col] = true;
