@@ -133,7 +133,7 @@ class T9 {
         map.put('8', "tuv".split(""));
         map.put('9', "wxyz".split(""));
         // map.put('1', "abc".split(""));
-        Bag<String> bg = new Bag<String>();
+        TST<Object> bg = new TST<Object>();
         // for(int i = 0; i < t9Signature.length(); i++) {
         //     for(String k: map.get(t9Signature.charAt(i))) {
         //         boolean[] mark = new boolean[map.get(t9Signature.charAt(i)).length];
@@ -141,9 +141,9 @@ class T9 {
         //     }
         // }
         formWords(0, map, "", bg, t9Signature, t9Signature.length());
-        return bg;
+        return bg.keys();
     }
-    public void formWords(int i, HashMap<Character, String[]> m, String prefix, Bag<String> b, String sign, int len) {
+    public void formWords(int i, HashMap<Character, String[]> m, String prefix, TST<Object> b, String sign, int len) {
         if(i >= len) {
             return;
         }
@@ -151,7 +151,7 @@ class T9 {
             // System.out.println(k);
             String word = prefix + k;
             if(tst.contains(word) && word.length() == len) {
-                b.add(word);
+                b.put(word, 'v');
             }
             formWords(i+1, m, word, b, sign, len);
         }
