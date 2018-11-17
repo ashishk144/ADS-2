@@ -425,7 +425,7 @@ Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:177:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:178:15: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:181:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:181:26: '>=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:181:25: '>' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:183:24: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:184:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:199:5: Missing a Javadoc comment. [JavadocMethod]
