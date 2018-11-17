@@ -178,7 +178,7 @@ class T9 {
             if(!topvals.isEmpty()) {
                 String[] str = bst.get(topvals.delMax()).split(" ");
                 int len = str.length;
-                if(len > 1) {
+                if(len >=1) {
                     String temp = "";
                     for(String strin: str) {
                         if(strin.length() >= temp.length()) {
