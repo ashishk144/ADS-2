@@ -181,11 +181,11 @@ class T9 {
                 if(len > 1) {
                     String temp = "";
                     for(String strin: str) {
-                        if(strin.length() > temp.length()) {
-                            sugstions.put(strin, 1);
+                        if(strin.length() >= temp.length()) {
+                            temp = strin;
                         }
-                        temp = strin;
                     }
+                    sugstions.put(temp, 1);
                 } else {
                     sugstions.put(str[0], 1);
                 }
