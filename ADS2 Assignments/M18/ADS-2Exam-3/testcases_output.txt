@@ -302,12 +302,33 @@ coz
 pay
 saw
 say
-Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
-	at TST.get(TST.java:110)
-	at TST.contains(TST.java:96)
-	at TST.put(TST.java:139)
-	at T9.getSuggestions(Solution.java:188)
-	at T9.t9(Solution.java:200)
-	at Solution.main(Solution.java:71)
+goods
+cards
+cares
+rate
+save
+card
+care
+case
+happy
+sales
+bone
+come
+poker
+roles
+real
+maps
+itor
+paces
+adds
+beer
+jane
+kane
+chef
+ages
+aids
+paper
+pases
+keep
 ----------------------------------------
 
