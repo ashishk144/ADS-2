@@ -181,7 +181,7 @@ class T9 {
                 if(len > 1) {
                     String temp = "";
                     for(String strin: str) {
-                        if(strin.length() >= temp.length()) {
+                        if(strin.length() > temp.length()) {
                             temp = strin;
                         }
                     }

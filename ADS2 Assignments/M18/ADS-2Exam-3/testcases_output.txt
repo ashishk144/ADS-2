@@ -302,7 +302,7 @@ coz
 pay
 saw
 say
-inner
+goods
 cards
 cares
 rate
@@ -320,13 +320,13 @@ real
 maps
 itor
 paces
+adds
 beer
-bffs
+jane
 kane
-lane
 chef
 ages
-bids
+aids
 paper
 pases
 keep
