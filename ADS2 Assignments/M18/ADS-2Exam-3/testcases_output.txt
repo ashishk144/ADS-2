@@ -283,10 +283,52 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
-	at MaxPQ.delMax(MaxPQ.java:174)
-	at T9.getSuggestions(Solution.java:178)
-	at T9.t9(Solution.java:198)
-	at Solution.main(Solution.java:71)
+update
+record
+immediately
+bristol
+ball
+call
+spoil
+kiss
+lips
+pints
+alone
+blood
+shop
+any
+boy
+coz
+pay
+saw
+say
+goods
+cards
+cares
+rate
+save
+card
+care
+case
+happy
+sales
+bone
+come
+poker
+roles
+real
+maps
+itor
+paces
+adds
+beer
+jane
+kane
+chef
+ages
+aids
+paper
+pases
+keep
 ----------------------------------------
 

@@ -423,14 +423,15 @@ Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:167:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:168:15: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:177:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:180:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:182:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:183:23: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:197:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:197:32: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:197:52: Parameter k should be final. [FinalParameters]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:178:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:181:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:183:24: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:184:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:199:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:199:32: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\Solution.java:199:52: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 54 errors.
+Checkstyle ends with 55 errors.
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\1ST YEAR\ADS2\ADS2 Assignments\M18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

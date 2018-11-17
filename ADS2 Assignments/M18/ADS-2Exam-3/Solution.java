@@ -175,18 +175,20 @@ class T9 {
         int count = 0;
         TST<Integer> sugstions = new TST();
         for(int i = 0; i < k; i++) {
-            String[] str = bst.get(topvals.delMax()).split(" ");
-            int len = str.length;
-            if(len > 1) {
-                String temp = "";
-                for(String strin: str) {
-                    if(strin.length() > temp.length()) {
-                        sugstions.put(strin, 1);
+            if(!topvals.isEmpty()) {
+                String[] str = bst.get(topvals.delMax()).split(" ");
+                int len = str.length;
+                if(len > 1) {
+                    String temp = "";
+                    for(String strin: str) {
+                        if(strin.length() > temp.length()) {
+                            sugstions.put(strin, 1);
+                        }
+                        temp = strin;
                     }
-                    temp = strin;
+                } else {
+                    sugstions.put(str[0], 1);
                 }
-            } else {
-                sugstions.put(str[0], 1);
             }
         }
         return sugstions.keys();
