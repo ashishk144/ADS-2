@@ -30,7 +30,7 @@ public final class Solution {
             int score = 0;
             for (String word : solver.getAllValidWords(board)) {
                 score += solver.scoreOf(word);
-            }   
+            }
             StdOut.println("Score = " + score);
             break;
 
