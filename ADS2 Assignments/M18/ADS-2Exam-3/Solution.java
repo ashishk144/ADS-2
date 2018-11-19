@@ -147,6 +147,9 @@ class T9 {
         if(i >= len) {
             return;
         }
+        if(!tst.hasPrefix(prefix)) {
+        	return;
+        }
         for(String k: m.get(sign.charAt(i))) {
             // System.out.println(k);
             String word = prefix + k;

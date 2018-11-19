@@ -92,7 +92,7 @@ messagesome
 going
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 hello
 pizza
@@ -157,67 +157,12 @@ fine
 seeking
 
 Your Output: 
-hello
-pizza
-what
-sunday
-ball
-call
-involve
-finish
-gone
-good
-home
-battery
-friends
-watches
-morning
-tonight
-shop
-phne
-any
-bmw
-box
-boy
-coz
-jay
-jaz
-kay
-law
-lay
-ammo
-das
-ear
-far
-send
-pocked
-pest
-rest
-woo
-paying
-saying
-james
-lands
-hates
-casting
-packing
-peeps
-bam
-bao
-cam
-can
-abt
-act
-bat
-cat
-mines
-liver
-lives
-dime
-dine
-find
-fine
-seeking
+Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
+	at TST.get(TST.java:119)
+	at TST.hasPrefix(TST.java:255)
+	at T9.formWords(Solution.java:150)
+	at T9.potentialWords(Solution.java:143)
+	at Solution.main(Solution.java:39)
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -283,52 +228,12 @@ paper
 keep
 
 Your Output: 
-update
-record
-immediately
-bristol
-ball
-call
-spoil
-kiss
-lips
-pints
-alone
-blood
-shop
-any
-boy
-coz
-pay
-saw
-say
-inner
-cards
-cares
-rate
-save
-card
-care
-case
-happy
-sales
-bone
-come
-poker
-roles
-real
-maps
-itor
-paces
-beer
-bffs
-kane
-lane
-chef
-ages
-bids
-paper
-pases
-keep
+Exception in thread "main" java.lang.IllegalArgumentException: key must have length >= 1
+	at TST.get(TST.java:119)
+	at TST.hasPrefix(TST.java:255)
+	at T9.formWords(Solution.java:150)
+	at T9.potentialWords(Solution.java:143)
+	at T9.t9(Solution.java:203)
+	at Solution.main(Solution.java:71)
 ----------------------------------------
 
